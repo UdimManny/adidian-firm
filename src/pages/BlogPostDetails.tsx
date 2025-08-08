@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, Phone, ArrowLeft } from 'lucide-react';
 import { blogDatas } from '../components/blogData'; 
@@ -7,6 +8,10 @@ const  BlogPostDetails = () => {
   const { serviceId } = useParams();
   
   const post = blogDatas[serviceId];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [serviceId]);
 
   if (!post) {
     return <Navigate to="/" replace />;
