@@ -5,7 +5,7 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: 'Opluwa John Asokoro',
+      name: 'Opluwa John',
       condition: 'Back Pain Recovery',
       // image: 'https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhdGllbnR8ZW58MHx8MHx8fDA%3D',
       quote: "After months of chronic back pain, I thought I'd never feel normal again. The team at Adidian helped me get back to playing with my children pain-free. Their personalized approach made all the difference.",
@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
       location: 'Abuja'
     },
     {
-      name: 'George Daniel Garki',
+      name: 'George Daniel',
       condition: 'Sports Injury Rehabilitation',
       // image: 'https://images.pexels.com/photos/5794063/pexels-photo-5794063.jpeg?auto=compress&cs=tinysrgb&w=400',
       quote: "As an athlete, I was devastated by my knee injury. Dr. Diana and her team not only helped me recover but made me stronger than before. I'm back on the field and performing better than ever.",
@@ -21,7 +21,7 @@ const Testimonials: React.FC = () => {
       location: 'Garki'
     },
     {
-      name: 'Mrs. Catherine Onate Area 11',
+      name: 'Mrs. Catherine Onate ',
       condition: 'Post-Pregnancy Recovery',
       // image: 'https://plus.unsplash.com/premium_photo-1731410157812-f3a6a559e8af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGF0aWVudCUyMGJsYWNrfGVufDB8fDB8fHww',
       quote: "The women's health physiotherapy program was exactly what I needed after childbirth. The team understood my unique needs as a new mother and helped me regain my strength and confidence.",
@@ -29,7 +29,7 @@ const Testimonials: React.FC = () => {
       location: 'Area 11'
     },
     {
-      name: 'Mrs. Grace Essien Gwarinpa',
+      name: 'Mrs. Grace Essien',
       condition: 'Stroke Recovery',
       // image: 'https://images.unsplash.com/photo-1632054229892-21103035a686?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGF0aWVudCUyMGJsYWNrfGVufDB8fDB8fHww',
       quote: "After my stroke, I didn't think I'd walk again. The neurological rehabilitation program at Adidian gave me hope and helped me achieve what doctors said was impossible. I'm walking and living independently again.",
@@ -37,7 +37,7 @@ const Testimonials: React.FC = () => {
       location: 'Wuse'
     },
     {
-      name: 'Mrs. Arziki Wakawa Wuse',
+      name: 'Mrs. Arziki Wakawa',
       condition: 'Chronic Pain Management',
       // image: 'https://images.unsplash.com/photo-1550792404-f62d4ce3bb3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBhdGllbnR8ZW58MHx8MHx8fDA%3D',
       quote: "I had tried everything for my chronic pain - multiple doctors, medications, other therapies. Nothing worked until I came to Adidian. Their holistic approach finally gave me the relief I'd been seeking for years.",
@@ -45,7 +45,7 @@ const Testimonials: React.FC = () => {
       location: 'Maitama'
     },
     {
-      name: 'Engr. Ehidiamen Okoyomon Maitama',
+      name: 'Engr. Ehidiamen Okoyomon',
       condition: 'Workplace Injury Recovery',
       // image: 'https://images.pexels.com/photos/5794058/pexels-photo-5794058.jpeg?auto=compress&cs=tinysrgb&w=400',
       quote: "My workplace injury left me unable to work for months. The occupational therapy program helped me not only recover but also prevented future injuries. I'm back to work and feeling stronger than ever.",
@@ -53,7 +53,7 @@ const Testimonials: React.FC = () => {
       location: 'Central Area'
     },
     {
-      name: 'Ifechukwu Ugwu Kubwa',
+      name: 'Ifechukwu Ugwugit ',
       condition: 'Pediatric Physiotherapy',
       // image: 'https://images.unsplash.com/photo-1550792404-f62d4ce3bb3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBhdGllbnR8ZW58MHx8MHx8fDA%3D',
       quote: "My son had developmental delays, and I was worried about her future. The pediatric team at Adidian worked miracles. She's now meeting all her milestones and thriving. I'm forever grateful.",
@@ -134,7 +134,7 @@ const Testimonials: React.FC = () => {
       </section>
 git 
       {/* Video Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Recovery Journeys</h2>
@@ -182,7 +182,7 @@ git
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 bg-blue-600 text-white">
