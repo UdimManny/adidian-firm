@@ -261,8 +261,8 @@ const Services: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div>
               <img
-              src='image_three.jpg'
-                // src="https://images.pexels.com/photos/7659731/pexels-photo-7659731.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='therapy.png'
+                // src="hjpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Black physiotherapist in rehabilitation center"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />
