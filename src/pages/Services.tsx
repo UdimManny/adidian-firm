@@ -33,7 +33,7 @@ const Services: React.FC = () => {
       title: 'Therapeutic Services',
       icon: Zap,
       color: 'bg-purple-50 text-purple-600',
-      image: 'image_five.jpg',
+      image: 'therapy.png',
       services: [
         'Manual therapy',
         'Exercise therapy',
@@ -46,7 +46,7 @@ const Services: React.FC = () => {
       title: 'Specialized Services',
       icon: Waves,
       color: 'bg-orange-50 text-orange-600',
-      image: 'image_seven.jpg',
+      image: 'therapy.jpg',
       services: [
         'Sports physiotherapy',
         "Women's health physiotherapy",
@@ -59,7 +59,7 @@ const Services: React.FC = () => {
       title: 'Diagnostic Services',
       icon: Stethoscope,
       color: 'bg-red-50 text-red-600',
-      image: 'image_ten.jpg',
+      image: 'diagnosis.jpg',
       services: [
         'Biomechanical assessment',
         'Movement analysis',
@@ -71,7 +71,7 @@ const Services: React.FC = () => {
       title: 'Supportive Services',
       icon: Heart,
       color: 'bg-pink-50 text-pink-600',
-      image: 'image_four.jpg',
+      image: 'support.jpg',
       services: [
         'Disability support and advocacy',
         'Chronic disease management',
