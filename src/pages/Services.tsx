@@ -7,7 +7,7 @@ const Services: React.FC = () => {
       title: 'Preventive Services',
       icon: Shield,
       color: 'bg-blue-50 text-blue-600',
-      image: 'image_one.jpg',
+      image: 'physiooffice.webp',
       services: [
         'Health education and wellness programs',
         'Injury prevention and risk assessment',
@@ -19,7 +19,7 @@ const Services: React.FC = () => {
       title: 'Rehabilitative Services',
       icon: Activity,
       color: 'bg-green-50 text-green-600',
-      image: 'image_three.jpg',
+      image: 'rehab.avif',
       services: [
         'Pain management (headaches, chronic pain)',
         'Orthopedic rehabilitation (sports injury, post-op)',
