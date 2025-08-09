@@ -150,8 +150,8 @@ const About: React.FC = () => {
             
             <div>
               <img
-              src='image_two.jpg'
-                // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='blackphysio.webp'
+                // src="blackphysio.webp?auto=compress&cs=tinysrgb&w=800"
                 alt="Black physiotherapist consulting with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

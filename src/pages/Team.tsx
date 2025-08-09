@@ -6,14 +6,14 @@ const Team: React.FC = () => {
     {
       name: 'Dr. Diana Daniel. O.',
       role: 'Licensed and Experienced',
-      image: 'image_nine.jpg',
+      image: 'fine_doc.jpg',
       specialties: ['Physiotherapist (DPT)', ' Ergonomist', 'Hydrotherapist'],
       experience: '5+ years'
     },
     {
       name: 'Dr. C. J. Otikpa',
       role: "Womens health and wellness coach",
-      image: 'fine_doc.jpg',
+      image: 'handsome_doc.jpg',
       specialties: ['Physiotherapist (DPT)'],
       experience: '4+ years'
     },

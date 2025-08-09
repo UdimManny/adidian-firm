@@ -15,63 +15,63 @@ const Home: React.FC = () => {
     {
       id: "pain-management",
       title: "Pain Management",
-      image: "https://images.pexels.com/photos/7659652/pexels-photo-7659652.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "pain.jpg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.",
     },
     {
       id: "sports-rehabilitation",
       title: "Sports Rehabilitation",
-      image: "https://images.pexels.com/photos/5794063/pexels-photo-5794063.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "sports.jpg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized treatment for sports injuries and performance enhancement for athletes of all levels.",
     },
     {
       id: "womens-health",
       title: "Women's Health",
-      image: "https://images.pexels.com/photos/7659729/pexels-photo-7659729.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "women.jpeg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized physiotherapy for women's health, including pre-natal and post-partum care.",
     },
     {
       id: "neurological-rehabilitation",
       title: "Neurological Rehabilitation",
-      image: "https://images.pexels.com/photos/5407204/pexels-photo-5407204.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "neurological.jpg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized therapy for neurological conditions to improve function and independence.",
     },
     {
       id: "occupational-therapy",
       title: "Occupational Therapy and Ergonomics",
-      image: "https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "ergonomics.png?auto=compress&cs=tinysrgb&w=800",
       description:
         "Workplace ergonomics and occupational health solutions to prevent work-related injuries.",
     },
     {
       id: "pediatrics",
       title: "Pediatrics",
-      image: "https://images.pexels.com/photos/7659655/pexels-photo-7659655.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "pediatrics.jpeg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized physiotherapy services for children and adolescents.",
     },
     {
       id: "geriatric-care",
       title: "Geriatric Care",
-      image: "https://images.pexels.com/photos/5407205/pexels-photo-5407205.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "geriatics.avif?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized physiotherapy services for older adults to maintain independence and quality of life.",
     },
     {
       id: "cardiovascular-rehabilitation",
       title: "Cardiovascular Rehabilitation",
-      image: "https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "cardio.jpg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized rehabilitation for heart conditions and cardiovascular health improvement.",
     },
     {
       id: "relaxation-massage",
       title: "Relaxation Massage",
-      image: "https://images.pexels.com/photos/7659731/pexels-photo-7659731.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "massage.jpeg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Gentle massage therapy to reduce stress, promote relaxation, and enhance overall well-being.",
     },
@@ -237,7 +237,7 @@ const Home: React.FC = () => {
           {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
               <img
-              src='image_four.jpg'
+              src='physiotherapy.png'
                 // src="https://images.pexels.com/photos/7659652/pexels-photo-7659652.jpeg?auto=compress&cs=tinysrgb&w=400"
                 alt="Black woman receiving physiotherapy treatment"
                 className="w-full h-48 object-cover rounded-lg mb-6"
@@ -252,109 +252,6 @@ const Home: React.FC = () => {
               >
                 Learn More →
               </Link>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_six.jpg'
-                // src="https://images.pexels.com/photos/5794063/pexels-photo-5794063.jpeg?auto=compress&cs=tinysrgb&w=400"
-                alt="Black athlete receiving sports physiotherapy"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Sports Rehabilitation</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized treatment for sports injuries and performance enhancement for athletes of all levels.
-              </p>
-              <Link
-                to={`/blog/${this.id}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
-              >
-                Learn More →
-              </Link>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_ten_one.jpg'
-                alt="Black woman with baby receiving postnatal care"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Women's Health</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized physiotherapy for women's health, including pre-natal and post-partum care.
-              </p>
-              <Link
-                to={`/blog/${this.id}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
-              >
-                Learn More →
-              </Link>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_two.jpg'
-                alt="Black woman with baby receiving postnatal care"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Neurological Rehabilitation
-</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized physiotherapy for women's health, including pre-natal and post-partum care.
-              </p>
-              <Link
-                to={`/blog/${this.id}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
-              >
-                Learn More →
-              </Link>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_five.jpg'
-                alt="Black woman with baby receiving postnatal care"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Occupational Therapy and Ergonomics
-</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized physiotherapy for women's health, including pre-natal and post-partum care.
-              </p>
-              <Link
-                to={`/blog/${this.id}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
-              >
-                Learn More →
-              </Link>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_seven.jpg'
-                alt="Black woman with baby receiving postnatal care"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Pediatrics
-</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized physiotherapy for women's health, including pre-natal and post-partum care.
-              </p>
-              <Link
-                to={`/blog/${this.id}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
-              >
-                Learn More →
-              </Link>
-            </div>
-            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-              <img
-              src='image_ten.jpg'
-                alt="Black woman with baby receiving postnatal care"
-                className="w-full h-48 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Geriatric care
-</h3>
-              <p className="text-gray-600 mb-4">
-                Specialized physiotherapy for women's health, including pre-natal and post-partum care.
-              </p>
               <Link
                 to={`/blog/${this.id}`}
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
