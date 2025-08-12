@@ -92,7 +92,7 @@ export const services = [
     {
       id: "pediatrics",
       title: "Pediatrics",
-      image: "/pediatrics.jpeg",
+      image: "/Pediatrics.jpeg",
       description:
         "Specialized physiotherapy services for children and adolescents.",
        details: {

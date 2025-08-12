@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com/adidianphysiotherapy" 
+                href="https://www.facebook.com/profile.php?id=61578476661800" 
                 className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors duration-200"
                 aria-label="Facebook"
                 target="_blank"
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                 <Facebook size={20} />
               </a>
               <a 
-                href="https://instagram.com/adidianphysiotherapy" 
+                href="https://www.instagram.com/adidian_physiotherapy_clinic?igsh=ajV5MjB6anozbTRh" 
                 className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition-colors duration-200"
                 aria-label="Instagram"
                 target="_blank"
