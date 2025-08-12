@@ -29,10 +29,13 @@ const Header: React.FC = () => {
           <div
           //  className="flex items-center"
            >
-            <Link to="/" className=" ">
+            <Link to="/" className="">
               {/* Adidian Physiotherapy */}
-              <img src="logo.jpg" alt="logo" 
-              className='w-full max-w-[50px] h-auto '/>
+              <div className='flex items-center gap-1'>
+                <img src="logo.jpg" alt="logo" 
+                className='w-full max-w-[50px] h-auto '/>
+                <div className='text-blue-600 font-[700]'>Adidian Physiotherapy</div>
+              </div>
             </Link>
           </div>
 

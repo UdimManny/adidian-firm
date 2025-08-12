@@ -50,7 +50,7 @@ const Home: React.FC = () => {
     {
       id: "pediatrics",
       title: "Pediatrics",
-      image: "pediatrics.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "Pediatrics.jpeg?auto=compress&cs=tinysrgb&w=800",
       description:
         "Specialized physiotherapy services for children and adolescents.",
     },
@@ -89,10 +89,7 @@ const Home: React.FC = () => {
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                At Adidian Physiotherapy Clinic, we deliver personalized,
-                evidence-based physiotherapy services in a compassionate
-                environment, empowering you to achieve optimal health and live
-                life free from pain.
+                At Adidian Physiotherapy Clinic in Garki, Abuja, we deliver personalized, evidence-based physical therapy services in a compassionate environment. Our licensed physiotherapists empower patients across Abuja to achieve optimal health, overcome chronic pain, and return to active living through specialized rehabilitation treatments.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

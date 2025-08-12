@@ -32,8 +32,7 @@ const Footer: React.FC = () => {
             <div>
               <h3 className="text-2xl font-bold text-blue-400 mb-4">Adidian Physiotherapy</h3>
               <p className="text-gray-300 leading-relaxed">
-                Restoring mobility and empowering wellness through personalized, evidence-based 
-                physiotherapy services in a compassionate environment.
+                Restoring mobility and empowering pain-free living through personalized, evidence-based physiotherapy services in Abuja.
               </p>
             </div>
             
