@@ -11,7 +11,7 @@ export const SEO = ({
   title = "Adidian Physiotherapy Clinic | Physical Therapy & Rehabilitation in Abuja",
   description = "Leading physiotherapy clinic in Abuja offering specialized physical therapy, sports therapy, women's health, pediatrics, orthopedics, and massage services.",
   keywords = "physio, physiotherapy, Abuja, physical therapy, massage, bone health, clinic, women's health, ergonomics, pediatrics, orthopedics, hospital, sports therapy",
-  canonical = "https://adidian.com"
+  canonical = "https://adidianphysiotherapyclinic.com/"
 }: SEOProps) => {
   return (
     <Helmet>
@@ -39,8 +39,8 @@ export const SEO = ({
           "@type": "MedicalBusiness",
           "name": "Adidian Physiotherapy Clinic",
           "image": "/logo.jpg",
-          "@id": "https://adidian.com",
-          "url": "https://adidian.com",
+          "@id": "https://adidianphysiotherapyclinic.com/",
+          "url": "https://adidianphysiotherapyclinic.com/",
           "telephone": "",
           "priceRange": "₦₦",
           "address": {
