@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="https://linkedin.com/company/adidianphysiotherapy" 
+                href="https://www.linkedin.com/in/diana-daniel-322388244/?originalSubdomain=ng" 
                 className="bg-blue-800 p-2 rounded-full hover:bg-blue-900 transition-colors duration-200"
                 aria-label="LinkedIn"
                 target="_blank"
