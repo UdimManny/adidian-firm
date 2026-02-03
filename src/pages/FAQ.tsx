@@ -6,8 +6,8 @@ const FAQ: React.FC = () => {
 
   const faqs = [
     {
-      question: 'What is Physiotherapy?',
-      answer: 'Physiotherapy is a branch of Medicine that focuses on restoring, maintaining and enhancing physical function, especially after an injury, illness or disability.'
+      question: 'What is Physiotherapy and how can your Abuja clinic help me?',
+      answer: 'Physiotherapy is a branch of Medicine that focuses on restoring, maintaining and enhancing physical function, especially after an injury, illness or disability. At our Abuja physiotherapy clinic, we provide expert physical therapy services to help you recover and maintain optimal health.'
     },
     {
       question: 'Why do I feel pains in my body?',
@@ -38,20 +38,20 @@ const FAQ: React.FC = () => {
       answer: 'Yes! You can come with a family member or a chaperon if need be. At most 1 person in the treatment cubicle.'
     },
     {
-      question: 'Do you offer home visits?',
-      answer: 'Yes! We started as a home-service provider and continue to offer in-home physiotherapy services. This is particularly beneficial for patients with mobility limitations, post-operative recovery, elderly patients, or those who prefer the comfort of their own environment. Contact us to discuss home visit availability in your area.'
+      question: 'Do you offer home physiotherapy visits in Abuja?',
+      answer: 'Yes! Our physiotherapy clinic started as a home-service provider and continues to offer in-home physiotherapy services across Abuja, including Garki, Wuse, Maitama, and surrounding areas. This is particularly beneficial for patients with mobility limitations, post-operative recovery, elderly patients, or those who prefer physiotherapy treatment in the comfort of their own environment. Contact us to discuss home visit availability in your area of Abuja.'
     },
     {
       question: 'What is your Refund and Cancellation Policy?',
       answer: 'If you are not satisfied with our services (of which we doubt), you are free to cancel your appointments after 3 days. Please give us 24 hours notice before your next appointment of your desire to cancel. And refunds of unused services would be granted. Thank you.'
     },
     {
-      question: 'What conditions do you treat at Adidian Physiotherapy Clinic?',
-      answer: 'We treat a wide range of conditions including chronic pain, sports injuries, post-operative rehabilitation, neurological conditions (stroke, spinal cord injuries), cardiovascular rehabilitation, pediatric conditions, geriatric issues, women\'s health concerns, and workplace injuries. Our comprehensive approach covers preventive, rehabilitative, therapeutic, and specialized services.'
+      question: 'What conditions do you treat at your physiotherapy clinic in Abuja?',
+      answer: 'At our Abuja physiotherapy clinic, we treat a wide range of conditions including chronic pain, sports injuries, post-operative rehabilitation, neurological conditions (stroke, spinal cord injuries), cardiovascular rehabilitation, pediatric conditions, geriatric issues, women\'s health concerns, and workplace injuries. Our comprehensive physiotherapy approach covers preventive, rehabilitative, therapeutic, and specialized services for patients throughout Abuja.'
     },
     {
-      question: 'What are your clinic hours?',
-      answer: 'Our clinic is open Monday through Friday from 8:00 AM to 6:00 PM, and Saturday from 9:00 AM to 4:00 PM. We also offer Sunday appointments by special arrangement. For home visits and emergency consultations, we provide flexible scheduling to accommodate your needs.'
+      question: 'What are your physiotherapy clinic hours in Abuja?',
+      answer: 'Our Abuja physiotherapy clinic is open Monday through Friday from 8:00 AM to 6:00 PM, and Saturday from 9:00 AM to 4:00 PM. We also offer Sunday physiotherapy appointments by special arrangement. For home visits and emergency consultations across Abuja, we provide flexible scheduling to accommodate your needs.'
     }
   ];
 
@@ -65,10 +65,10 @@ const FAQ: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Physiotherapy FAQ - Abuja Clinic</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Find answers to common questions about our services, treatments, and what to expect 
-              at Adidian Physiotherapy Clinic.
+              Find answers to common questions about our physiotherapy services, treatments, and what to expect 
+              at Adidian Physiotherapy Clinic in Abuja.
             </p>
           </div>
         </div>
@@ -111,17 +111,17 @@ const FAQ: React.FC = () => {
 
               src='image_nine.jpg'
                 // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Black physiotherapist consulting with patient"
+                alt="Physiotherapist at Adidian clinic in Abuja consulting with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />
             </div>
             
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Still Have Questions?</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Still Have Physiotherapy Questions?</h2>
               <p className="text-gray-600 leading-relaxed">
-                Our friendly and knowledgeable team is here to help you with any additional questions 
+                Our friendly and knowledgeable physiotherapy team in Abuja is here to help you with any additional questions 
                 or concerns you may have. We believe in transparent communication and want to ensure 
-                you feel completely comfortable before starting your treatment journey with us.
+                you feel completely comfortable before starting your physiotherapy treatment journey with us.
               </p>
               
               <div className="space-y-4">
@@ -131,7 +131,7 @@ const FAQ: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Call Us Directly</h4>
-                    <p className="text-gray-600">Speak with our team for immediate answers</p>
+                    <p className="text-gray-600">Speak with our Abuja physiotherapy team for immediate answers</p>
                     <a href="tel:07065873379" className="text-blue-600 font-semibold">070-6587-3379</a>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ const FAQ: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Send Us an Email</h4>
-                    <p className="text-gray-600">Get detailed responses to your questions</p>
+                    <p className="text-gray-600">Get detailed responses to your physiotherapy questions</p>
                     <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-blue-600 font-semibold">
                       info@adidianphysiotherapyclinic.com
                     </a>
@@ -157,9 +157,9 @@ const FAQ: React.FC = () => {
       {/* Contact CTA */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Physiotherapy Journey in Abuja?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Don't let questions hold you back from getting the care you need. Contact us today 
+            Don't let questions hold you back from getting the physiotherapy care you need. Contact our Abuja clinic today 
             and take the first step towards your recovery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

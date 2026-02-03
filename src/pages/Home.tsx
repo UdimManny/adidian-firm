@@ -84,12 +84,12 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Restoring Mobility,{" "}
-                <span className="text-blue-600">Empowering Wellness</span>
+                Leading Physiotherapy Clinic in Abuja{" "}
+                <span className="text-blue-600">Expert Physical Therapy & Rehabilitation</span>
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed">
-                At Adidian Physiotherapy Clinic in Garki, Abuja, we deliver personalized, evidence-based physical therapy services in a compassionate environment. Our licensed physiotherapists empower patients across Abuja to achieve optimal health, overcome chronic pain, and return to active living through specialized rehabilitation treatments.
+                Adidian Physiotherapy Clinic is the premier physiotherapy clinic in Abuja, located in Garki, Area 11. We provide expert physical therapy, sports rehabilitation, pain management, and specialized treatments. Our licensed physiotherapists serve patients throughout Abuja with evidence-based care for optimal recovery and wellness.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -158,10 +158,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Adidian?
+              Why Choose Our Physiotherapy Clinic in Abuja?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We stand for ADIDIAN values that guide everything we do
+              As the top-rated physiotherapy clinic in Abuja, we stand for ADIDIAN values that guide our expert physical therapy services
             </p>
           </div>
 
@@ -172,8 +172,7 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Our Goal</h3>
               <p className="text-gray-600 text-sm">
-                Deliver personalized, evidence-based physiotherapy services in a
-                compassionate environment.
+                Deliver personalized, evidence-based physiotherapy services as the leading clinic in Abuja, providing compassionate care to all patients.
               </p>
             </div>
 
@@ -185,8 +184,7 @@ const Home: React.FC = () => {
                 Our Mission
               </h3>
               <p className="text-gray-600 text-sm">
-                Help people get back to living life free from pain and
-                discomfort, full of energy and vitality.
+                Help people across Abuja get back to living life free from pain through expert physiotherapy and rehabilitation services.
               </p>
             </div>
 
@@ -198,8 +196,7 @@ const Home: React.FC = () => {
                 Our Vision
               </h3>
               <p className="text-gray-600 text-sm">
-                Revolutionize physiotherapy by providing pioneering,
-                evidence-based treatments that transform lives.
+                Be the most trusted physiotherapy clinic in Abuja, revolutionizing physical therapy through pioneering treatments.
               </p>
             </div>
 
@@ -211,8 +208,7 @@ const Home: React.FC = () => {
                 Our Community
               </h3>
               <p className="text-gray-600 text-sm">
-                Serving everyone from infants to elderly, workers, athletes, and
-                families seeking healing.
+                Serving the entire Abuja community - from infants to elderly, workers, athletes, and families seeking expert physiotherapy care.
               </p>
             </div>
           </div>
@@ -224,10 +220,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Our Featured Services
+              Physiotherapy Services in Abuja
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive physiotherapy services tailored to your unique needs
+              Comprehensive physiotherapy and physical therapy services at our Abuja clinic, tailored to your unique rehabilitation needs
             </p>
           </div>
 
@@ -317,11 +313,10 @@ const Home: React.FC = () => {
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-4">
-            Ready to Start Your Healing Journey?
+            Ready to Visit the Best Physiotherapy Clinic in Abuja?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Take the first step towards a pain-free, active lifestyle. Our
-            expert team is here to help you achieve your health goals.
+            Take the first step towards recovery at Adidian Physiotherapy Clinic in Abuja. Our expert physiotherapists are ready to help you achieve optimal health and wellness.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

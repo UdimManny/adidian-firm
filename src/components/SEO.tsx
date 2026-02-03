@@ -8,9 +8,9 @@ interface SEOProps {
 }
 
 export const SEO = ({ 
-  title = "Adidian Physiotherapy Clinic | Physical Therapy & Rehabilitation in Abuja",
-  description = "Leading physiotherapy clinic in Abuja offering specialized physical therapy, sports therapy, women's health, pediatrics, orthopedics, and massage services.",
-  keywords = "physio, physiotherapy, Abuja, physical therapy, massage, bone health, clinic, women's health, ergonomics, pediatrics, orthopedics, hospital, sports therapy",
+  title = "Best Physiotherapy Clinic in Abuja | Adidian Physical Therapy & Rehabilitation",
+  description = "Top-rated physiotherapy clinic in Abuja offering expert physical therapy, sports rehabilitation, pain management, and specialized treatments. Located in Garki, Area 11. Book your appointment today.",
+  keywords = "physiotherapy clinic Abuja, physical therapy Abuja, physiotherapist Abuja, sports therapy Abuja, pain management Abuja, rehabilitation clinic Abuja, Garki physiotherapy, Area 11 physio, best physiotherapy clinic Abuja",
   canonical = "https://adidianphysiotherapyclinic.com/"
 }: SEOProps) => {
   return (
@@ -36,26 +36,57 @@ export const SEO = ({
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "MedicalBusiness",
+          "@type": "PhysicalTherapy",
           "name": "Adidian Physiotherapy Clinic",
+          "alternateName": "Best Physiotherapy Clinic in Abuja",
           "image": "/logo.jpg",
           "@id": "https://adidianphysiotherapyclinic.com/",
           "url": "https://adidianphysiotherapyclinic.com/",
-          "telephone": "",
+          "telephone": "+2347065873379",
           "priceRange": "₦₦",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "",
+            "streetAddress": "No 32 Lord Lugard Street, Area 11, Garki",
             "addressLocality": "Abuja",
+            "addressRegion": "FCT",
             "addressCountry": "NG"
           },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "9.057108",
+            "longitude": "7.456398"
+          },
+          "openingHours": ["Mo-Fr 08:00-18:00", "Sa 09:00-16:00"],
+          "areaServed": [
+            "Abuja",
+            "Garki",
+            "Area 11", 
+            "Wuse",
+            "Maitama",
+            "Central Business District",
+            "Kubwa",
+            "Gwarinpa",
+            "FCT"
+          ],
           "medicalSpecialty": [
             "Physiotherapy",
             "Physical Therapy",
             "Sports Therapy",
+            "Pain Management",
+            "Neurological Rehabilitation",
             "Orthopedics",
             "Pediatric Physical Therapy",
             "Women's Health"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "200"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61578476661800",
+            "https://www.instagram.com/adidian_physiotherapy_clinic",
+            "https://www.linkedin.com/in/diana-daniel-322388244"
           ]
         })}
       </script>

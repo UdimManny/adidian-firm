@@ -49,10 +49,10 @@ const Team: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Meet Our Expert Team</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Meet Our Expert Physiotherapy Team in Abuja</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Adidian Physiotherapy Clinic became a leading provider of excellent physiotherapy services 
-              by employing the best gifted hands in the field of health.
+              Adidian Physiotherapy Clinic became the leading provider of excellent physiotherapy services in Abuja
+              by employing the best gifted hands in the field of physical therapy and rehabilitation.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Team: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-12">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Professional Qualifications</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Professional Physiotherapy Qualifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {qualifications.map((qual, index) => {
                 const IconComponent = qual.icon;
@@ -136,30 +136,30 @@ const Team: React.FC = () => {
             </div>
             
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Our Team Philosophy</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Our Physiotherapy Team Philosophy</h2>
               <p className="text-gray-600 leading-relaxed">
-                Our success stems from employing competent, licensed, goal-oriented physiotherapists 
+                Our success as the leading physiotherapy clinic in Abuja stems from employing competent, licensed, goal-oriented physiotherapists 
                 who possess both academic prowess and clinical excellence. We believe in providing 
-                the best incomparable services to our patients through continuous learning and 
+                the best incomparable physiotherapy services to our patients across Abuja through continuous learning and 
                 compassionate care.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Academic excellence combined with practical clinical experience</p>
+                  <p className="text-gray-600">Academic excellence in physiotherapy combined with practical clinical experience in Abuja</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Continuous professional development and training</p>
+                  <p className="text-gray-600">Continuous professional development and physiotherapy training</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Patient-centered approach with compassionate care</p>
+                  <p className="text-gray-600">Patient-centered physiotherapy approach with compassionate care for all Abuja residents</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Evidence-based treatment methods and innovative techniques</p>
+                  <p className="text-gray-600">Evidence-based physiotherapy treatment methods and innovative techniques</p>
                 </div>
               </div>
             </div>
@@ -170,16 +170,16 @@ const Team: React.FC = () => {
       {/* Call to Action */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Meet Our Team?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Meet Our Physiotherapy Team in Abuja?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Our team combines academic excellence with clinical expertise to provide compassionate, 
-            evidence-based care that transforms lives.
+            Our physiotherapy team combines academic excellence with clinical expertise to provide compassionate, 
+            evidence-based care that transforms lives throughout Abuja and the FCT.
           </p>
           <a
             href="tel:07065873379"
             className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200 font-semibold"
           >
-            Schedule a Consultation
+            Schedule a Physiotherapy Consultation
           </a>
         </div>
       </section>

@@ -87,10 +87,10 @@ const Services: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Comprehensive Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Physiotherapy Services in Abuja</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer a wide range of physiotherapy services in Abuja, customized to meet your specific needs 
-              and help you achieve optimal health and wellness.
+              Our physiotherapy clinic in Abuja offers a comprehensive range of physical therapy services, customized to meet your specific needs 
+              and help you achieve optimal health and wellness. Serving patients throughout Garki, Wuse, Maitama, and all areas of Abuja.
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Services: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-xl p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Consultation Options</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Physiotherapy Consultation Options in Abuja</h2>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="bg-blue-100 p-3 rounded-full">
@@ -146,7 +146,7 @@ const Services: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">Physical Consultation</h4>
-                      <p className="text-gray-600">In-person sessions at our clinic for hands-on treatment and comprehensive care</p>
+                      <p className="text-gray-600">In-person sessions at our Abuja physiotherapy clinic for hands-on treatment and comprehensive care</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -155,7 +155,7 @@ const Services: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900">Phone Consultation</h4>
-                      <p className="text-gray-600">Remote consultations for initial assessment, follow-ups, and guidance</p>
+                      <p className="text-gray-600">Remote physiotherapy consultations for initial assessment, follow-ups, and guidance for patients across Abuja</p>
                     </div>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const Services: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Our team will help you find the best treatment option for your needs and customize your treatment plan to reach your goals at the most affordable cost.
+            Our expert physiotherapy team in Abuja will help you find the best treatment option for your needs and customize your rehabilitation plan to reach your goals at the most affordable cost.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -252,9 +252,9 @@ const Services: React.FC = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Inpatient Admission Services</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Inpatient Physiotherapy Services in Abuja</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive inpatient rehabilitation services with state-of-the-art equipment and evidence-based approaches
+              Comprehensive inpatient rehabilitation services at our Abuja physiotherapy clinic with state-of-the-art equipment and evidence-based approaches
             </p>
           </div>
 
@@ -269,15 +269,15 @@ const Services: React.FC = () => {
             </div>
             
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Overview</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Inpatient Physiotherapy Overview</h3>
               <p className="text-gray-600 leading-relaxed">
-                Adidian Physiotherapy Clinic is an Outpatient and Inpatient clinic with Doctors and Nurses on stand-by, 
-                readily equipped to attend to your specific needs. We use state-of-art equipments and evidence-based 
-                approach to restore patients back to function.
+                Adidian Physiotherapy Clinic is a leading Outpatient and Inpatient physiotherapy clinic in Abuja with Doctors and Nurses on stand-by, 
+                readily equipped to attend to your specific rehabilitation needs. We use state-of-art physiotherapy equipment and evidence-based 
+                approaches to restore patients back to optimal function.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We have partnered with Alliance Hospital, Hillshore Clinics and Health resorts. The rehabilitation 
-                centre specialize in post-traumatic cases like post-op rehabilitation (patients recovering from major 
+                Our Abuja physiotherapy clinic has partnered with Alliance Hospital, Hillshore Clinics and Health resorts. The rehabilitation 
+                centre specializes in post-traumatic cases like post-op physiotherapy rehabilitation (patients recovering from major 
                 surgeries, orthopedic surgeries, Brain and Spine Surgeries and Spinal cord injuries).
               </p>
             </div>

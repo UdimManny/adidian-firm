@@ -37,10 +37,10 @@ const Contact: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Contact Our Physiotherapy Clinic in Abuja</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to start your journey to better health? Contact us today to book your consultation 
-              or learn more about our services. We're here to help you every step of the way.
+              Ready to start your physiotherapy journey to better health? Contact Adidian Physiotherapy Clinic in Abuja today to book your consultation 
+              or learn more about our physical therapy services. We're here to help you every step of the way.
             </p>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Physiotherapy Clinic Contact Information</h2>
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -62,8 +62,9 @@ const Contact: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900">Address</h4>
                       <p className="text-gray-600">
-                        No 32 Lord Lugard Street, Area 11, Garki<br />
-                        Beside Efab Properties Ltd, Abuja
+                        No 32 Lord Lugard Street, Area 11, Garki, Abuja<br />
+                        Beside Efab Properties Ltd, FCT<br />
+                        <span className="text-sm text-blue-600">Premier Physiotherapy Clinic in Abuja</span>
                       </p>
                     </div>
                   </div>
@@ -125,7 +126,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Book Your Consultation</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Book Your Physiotherapy Consultation</h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -180,7 +181,7 @@ const Contact: React.FC = () => {
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                    Service Needed
+                    Physiotherapy Service Needed
                   </label>
                   <select
                     id="service"
@@ -190,13 +191,13 @@ const Contact: React.FC = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
-                    <option value="pain-management">Pain Management</option>
-                    <option value="sports-injury">Sports Injury Rehabilitation</option>
-                    <option value="neurological">Neurological Rehabilitation</option>
+                    <option value="pain-management">Pain Management Physiotherapy</option>
+                    <option value="sports-injury">Sports Injury Physiotherapy</option>
+                    <option value="neurological">Neurological Physiotherapy</option>
                     <option value="womens-health">Women's Health Physiotherapy</option>
                     <option value="pediatric">Pediatric Physiotherapy</option>
-                    <option value="occupational">Occupational Therapy</option>
-                    <option value="general">General Consultation</option>
+                    <option value="occupational">Occupational Physiotherapy</option>
+                    <option value="general">General Physiotherapy Consultation</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -212,7 +213,7 @@ const Contact: React.FC = () => {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="Tell us about your condition or any questions you have..."
+                    placeholder="Tell us about your condition or any physiotherapy questions you have..."
                   ></textarea>
                 </div>
 
@@ -242,10 +243,10 @@ const Contact: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Multiple Ways to Reach Us</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Multiple Ways to Reach Our Abuja Physiotherapy Clinic</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choose the contact method that works best for you. We're committed to making 
-              healthcare accessible and convenient.
+              physiotherapy care accessible and convenient for all patients in Abuja.
             </p>
           </div>
 
@@ -254,9 +255,9 @@ const Contact: React.FC = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Phone className="text-blue-600" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Phone Consultation</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Physiotherapy Phone Consultation</h3>
               <p className="text-gray-600 mb-6">
-                Get immediate answers and book appointments over the phone. Perfect for initial consultations and follow-ups.
+                Get immediate answers and book physiotherapy appointments over the phone. Perfect for initial consultations and follow-ups.
               </p>
               <a
                 href="tel:07065873379"
@@ -270,9 +271,9 @@ const Contact: React.FC = () => {
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="text-green-600" size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Visit Our Clinic</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Visit Our Abuja Physiotherapy Clinic</h3>
               <p className="text-gray-600 mb-6">
-                Come to our modern facility in Garki for comprehensive in-person consultations and treatments.
+                Come to our modern physiotherapy facility in Garki, Abuja for comprehensive in-person consultations and treatments.
               </p>
               <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors duration-200 font-semibold">
                 Get Directions
@@ -311,29 +312,29 @@ const Contact: React.FC = () => {
             </div>
             
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Home Visit Services</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Home Physiotherapy Services in Abuja</h2>
               <p className="text-gray-600 leading-relaxed">
-                We started as a home-service provider and continue to offer in-home physiotherapy 
-                services across Abuja. This option is perfect for patients with mobility limitations, 
-                post-operative recovery needs, or those who prefer the comfort of their own environment.
+                Our physiotherapy clinic started as a home-service provider and continues to offer in-home physiotherapy 
+                services across Abuja, Garki, Wuse, Maitama, and surrounding areas. This option is perfect for patients with mobility limitations, 
+                post-operative recovery needs, or those who prefer physiotherapy treatment in the comfort of their own environment.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Convenient care in your own home</p>
+                  <p className="text-gray-600">Convenient physiotherapy care in your own home across Abuja</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Ideal for elderly patients and post-surgery recovery</p>
+                  <p className="text-gray-600">Ideal for elderly patients and post-surgery physiotherapy recovery</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Flexible scheduling to fit your routine</p>
+                  <p className="text-gray-600">Flexible physiotherapy scheduling to fit your routine</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Same quality care as our clinic visits</p>
+                  <p className="text-gray-600">Same quality physiotherapy care as our Abuja clinic visits</p>
                 </div>
               </div>
               
@@ -341,7 +342,7 @@ const Contact: React.FC = () => {
                 href="tel:07065873379"
                 className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors duration-200 font-semibold inline-block"
               >
-                Book Home Visit
+                Book Home Physiotherapy Visit
               </a>
             </div>
           </div>

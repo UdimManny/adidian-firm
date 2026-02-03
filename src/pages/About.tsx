@@ -18,10 +18,10 @@ const About: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Adidian Physiotherapy Clinic</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Our Physiotherapy Clinic in Abuja</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Established in 2023, we've grown from a home-service provider to a leading physiotherapy clinic, 
-              driven by our commitment to exceptional patient care and community wellness.
+              Established in 2023, Adidian has grown from a home-service provider to the leading physiotherapy clinic in Abuja, 
+              driven by our commitment to exceptional patient care and community wellness throughout the FCT.
             </p>
           </div>
         </div>
@@ -42,22 +42,22 @@ const About: React.FC = () => {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story as Abuja's Premier Physiotherapy Clinic</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Adidian Physiotherapy Clinic was established in 2023, beginning as a home-service care provider. 
-                  We started by moving from one patient's house to the next, rendering exceptional services to 
-                  numerous patients across our community.
+                  Adidian Physiotherapy Clinic was established in 2023 in Abuja, beginning as a home-service care provider. 
+                  We started by moving from one patient's house to the next across Abuja, rendering exceptional physiotherapy services to 
+                  numerous patients throughout Garki, Wuse, Maitama, and surrounding areas.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our ever-growing desire to provide the best physical therapy intervention motivated us to 
-                  establish this practice. We recognized the need for accessible, high-quality physiotherapy 
-                  services that truly understood and served our community's unique needs.
+                  Our ever-growing desire to provide the best physical therapy intervention in Abuja motivated us to 
+                  establish this clinic. We recognized the need for accessible, high-quality physiotherapy 
+                  services that truly understood and served Abuja's unique healthcare needs.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We employ competent, licensed, goal-oriented physiotherapists with both academic prowess 
-                  and clinical excellence, providing the best incomparable services to patients. From our 
-                  inception till today, we continue to operate with the same founding core values and guiding 
-                  principles that have led to our growth and success.
+                  Today, we employ competent, licensed, goal-oriented physiotherapists with both academic prowess 
+                  and clinical excellence, making us the top physiotherapy clinic in Abuja. From our 
+                  inception till today, we continue to serve the Abuja community with the same founding core values and guiding 
+                  principles that have led to our growth and success as the leading physiotherapy clinic in the FCT.
                 </p>
               </div>
             </div>
@@ -121,29 +121,29 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">Our Vision for the Future</h2>
+              <h2 className="text-3xl font-bold text-gray-900">Our Vision as Abuja's Leading Physiotherapy Clinic</h2>
               <p className="text-gray-600 leading-relaxed">
-                We envision a future where our clinic is recognized as a global leader in physiotherapy 
+                We envision a future where our physiotherapy clinic in Abuja is recognized as a global leader in physiotherapy 
                 innovation and excellence, where our team comprises the most talented, compassionate, 
-                and dedicated professionals in healthcare.
+                and dedicated physiotherapy professionals serving the Abuja community and beyond.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">Our patients achieve remarkable outcomes, exceeding expectations and improving quality of life</p>
+                  <p className="text-gray-600">Our patients across Abuja achieve remarkable physiotherapy outcomes, exceeding expectations and improving quality of life</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">We collaborate with healthcare leaders and researchers to advance physiotherapy</p>
+                  <p className="text-gray-600">We collaborate with healthcare leaders in Abuja and researchers to advance physiotherapy practices</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">We make a lasting impact on patients, community, and the world at large</p>
+                  <p className="text-gray-600">We make a lasting impact on patients, the Abuja community, and the physiotherapy profession at large</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
-                  <p className="text-gray-600">We push boundaries of what's possible in physiotherapy treatment</p>
+                  <p className="text-gray-600">We push boundaries of what's possible in physiotherapy treatment, setting new standards for clinics in Abuja</p>
                 </div>
               </div>
             </div>
@@ -164,10 +164,10 @@ const About: React.FC = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Who We Serve</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Who We Serve at Our Abuja Physiotherapy Clinic</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive care extends to everyone in our community, from infants to elderly, 
-              addressing diverse health and wellness needs.
+              Our comprehensive physiotherapy care extends to everyone in the Abuja community, from infants to elderly, 
+              addressing diverse health and wellness needs across all areas of the FCT.
             </p>
           </div>
 
