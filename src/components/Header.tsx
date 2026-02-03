@@ -29,12 +29,12 @@ const Header: React.FC = () => {
           <div
           //  className="flex items-center"
            >
-            <Link to="/" className="">
+            <Link to="/" className="" title="Best Physiotherapy Clinic in Abuja">
               {/* Adidian Physiotherapy */}
               <div className='flex items-center gap-1'>
-                <img src="logo.jpg" alt="logo" 
+                <img src="logo.jpg" alt="Adidian Physiotherapy Clinic Abuja Logo" 
                 className='w-full max-w-[50px] h-auto '/>
-                <div className='text-blue-600 font-[700]'>Adidian Physiotherapy</div>
+                <div className='text-blue-600 font-[700]'>Adidian Physiotherapy Clinic</div>
               </div>
             </Link>
           </div>

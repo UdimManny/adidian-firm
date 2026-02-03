@@ -8,19 +8,19 @@ const Blog: React.FC = () => {
   return (
     <>
       <SEO 
-        title="Health Resources & Education | Adidian Physiotherapy Clinic"
-        description="Access valuable health information, expert advice, and educational content about physiotherapy and wellness from Adidian Clinic in Abuja."
-        keywords="physiotherapy education, health resources, physical therapy blog, Abuja physio"
+        title="Physiotherapy Education & Health Resources | Abuja Clinic"
+        description="Access valuable physiotherapy information, expert advice, and educational content about physical therapy and wellness from Adidian Physiotherapy Clinic in Abuja."
+        keywords="physiotherapy education Abuja, health resources Abuja, physical therapy blog Abuja, physiotherapy clinic Abuja, physio education"
       />
       <div className="pt-20">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Health Resources & Education</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Physiotherapy Education & Health Resources</h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Access valuable health information, expert advice, and educational content to support
-                your wellness journey and physiotherapy treatment.
+                Access valuable physiotherapy information, expert advice, and educational content from our Abuja clinic to support
+                your wellness journey and physical therapy treatment.
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Blog: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">FAQs</h3>
                 <p className="text-gray-600 mb-6">
-                  Find answers to frequently asked questions about physiotherapy, treatments, and our services.
+                  Find answers to frequently asked questions about physiotherapy, treatments, and our Abuja clinic services.
                 </p>
                 <a
                   href="/faq"
@@ -53,7 +53,7 @@ const Blog: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Health Blogs</h3>
                 <p className="text-gray-600 mb-6">
-                  Read expert articles on physiotherapy, wellness tips, injury prevention, and recovery strategies.
+                  Read expert articles on physiotherapy from our Abuja clinic, wellness tips, injury prevention, and recovery strategies.
                 </p>
                 <button className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors duration-200 font-semibold">
                   Coming Soon
@@ -185,7 +185,7 @@ const Blog: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">Stay Updated with Health Tips</h2>
             <p className="text-xl mb-8 opacity-90">
-              Subscribe to receive the latest health tips, physiotherapy advice, and updates on our educational content.
+              Subscribe to receive the latest health tips, physiotherapy advice from our Abuja clinic, and updates on our educational content.
             </p>
             <div className="max-w-md mx-auto flex gap-4">
               <input

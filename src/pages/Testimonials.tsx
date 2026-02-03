@@ -83,10 +83,10 @@ const Testimonials: React.FC = () => {
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Patient Success Stories</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Physiotherapy Success Stories - Abuja Patients</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from our patients about their journey to recovery and how Adidian Physiotherapy 
-              Clinic has transformed their lives across Abuja and surrounding areas.
+              Hear from our patients about their physiotherapy journey to recovery and how Adidian Physiotherapy 
+              Clinic in Abuja has transformed their lives across Garki, Wuse, Maitama, and surrounding areas.
             </p>
           </div>
 
@@ -186,10 +186,10 @@ const Testimonials: React.FC = () => {
       {/* Call to Action */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Write Your Success Story?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Write Your Physiotherapy Success Story in Abuja?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join hundreds of satisfied patients who have transformed their lives with our expert care. 
-            Your journey to recovery starts with a single call.
+            Join hundreds of satisfied patients who have transformed their lives with our expert physiotherapy care in Abuja. 
+            Your journey to recovery at our clinic starts with a single call.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -202,7 +202,7 @@ const Testimonials: React.FC = () => {
               href="mailto:info@adidianphysiotherapyclinic.com"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-200 font-semibold"
             >
-              Book Consultation Today
+              Book Physiotherapy Consultation Today
             </a>
           </div>
         </div>
