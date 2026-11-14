@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import { SEO } from '../components/SEO';
 // import Image1 from '../../public/first.jpeg'
 
 const Testimonials: React.FC = () => {
@@ -79,6 +80,11 @@ const Testimonials: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Patient Reviews & Success Stories | Adidian Physiotherapy Abuja"
+        description="Read what patients say about their physiotherapy treatment at Adidian Physiotherapy Clinic in Garki, Abuja."
+        breadcrumbs={[{ name: "Testimonials", path: "/testimonials" }]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,7 +151,7 @@ const Testimonials: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <img
-              src='image_five.jpg'
+              src='/image_five.jpg'
                 alt="Before and after physiotherapy treatment"
                 className="w-full h-64 object-cover"
               />
@@ -163,7 +169,7 @@ const Testimonials: React.FC = () => {
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <img
-              src='image_two.jpg'
+              src='/image_two.jpg'
                 // src="https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Elderly patient regaining mobility"
                 className="w-full h-64 object-cover"

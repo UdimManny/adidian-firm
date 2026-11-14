@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  ssr: {
+    // Bundle these into the prerender build (react-helmet-async is CommonJS).
+    noExternal: ['react-helmet-async', 'lucide-react'],
+  },
 });

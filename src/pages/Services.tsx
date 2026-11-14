@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Activity, Zap, Waves, Stethoscope, Users, Brain, Heart } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const Services: React.FC = () => {
   const serviceCategories = [
@@ -7,7 +8,7 @@ const Services: React.FC = () => {
       title: 'Preventive Services',
       icon: Shield,
       color: 'bg-blue-50 text-blue-600',
-      image: 'physiooffice.webp',
+      image: '/physiooffice.webp',
       services: [
         'Health education and wellness programs',
         'Injury prevention and risk assessment',
@@ -19,7 +20,7 @@ const Services: React.FC = () => {
       title: 'Rehabilitative Services',
       icon: Activity,
       color: 'bg-green-50 text-green-600',
-      image: 'rehab.avif',
+      image: '/rehab.avif',
       services: [
         'Pain management (headaches, chronic pain)',
         'Orthopedic rehabilitation (sports injury, post-op)',
@@ -33,7 +34,7 @@ const Services: React.FC = () => {
       title: 'Therapeutic Services',
       icon: Zap,
       color: 'bg-purple-50 text-purple-600',
-      image: 'therapy.png',
+      image: '/therapy.png',
       services: [
         'Manual therapy',
         'Exercise therapy',
@@ -46,7 +47,7 @@ const Services: React.FC = () => {
       title: 'Specialized Services',
       icon: Waves,
       color: 'bg-orange-50 text-orange-600',
-      image: 'therapy.jpg',
+      image: '/therapy.jpg',
       services: [
         'Sports physiotherapy',
         "Women's health physiotherapy",
@@ -59,7 +60,7 @@ const Services: React.FC = () => {
       title: 'Diagnostic Services',
       icon: Stethoscope,
       color: 'bg-red-50 text-red-600',
-      image: 'diagnosis.jpg',
+      image: '/diagnosis.jpg',
       services: [
         'Biomechanical assessment',
         'Movement analysis',
@@ -71,7 +72,7 @@ const Services: React.FC = () => {
       title: 'Supportive Services',
       icon: Heart,
       color: 'bg-pink-50 text-pink-600',
-      image: 'support.jpg',
+      image: '/support.jpg',
       services: [
         'Disability support and advocacy',
         'Chronic disease management',
@@ -83,6 +84,11 @@ const Services: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Physiotherapy Services in Abuja | Pain, Sports, Stroke & Women's Health"
+        description="Physiotherapy services at our Abuja clinic: pain management, sports rehabilitation, neurological and stroke rehab, women's health, paediatrics, geriatric care and massage."
+        breadcrumbs={[{ name: "Services", path: "/services" }]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,8 +176,8 @@ const Services: React.FC = () => {
               </div>
               <div>
                 <img
-               src='image_nine.jpg'
-                  // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg?auto=compress&cs=tinysrgb&w=800"
+               src='/image_nine.jpg'
+                  // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg"
                   alt="Black physiotherapist consulting with patient"
                   className="rounded-xl shadow-lg w-full h-80 object-cover"
                 />
@@ -261,8 +267,8 @@ const Services: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div>
               <img
-              src='therapy.png'
-                // src="hjpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/therapy.png'
+                // src="hjpeg"
                 alt="Black physiotherapist in rehabilitation center"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />
