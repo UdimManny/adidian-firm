@@ -108,8 +108,8 @@ export const Privacy = () => (
       <li>With your HMO or insurer, to process claims you ask us to make.</li>
       <li>With doctors or other health professionals involved in your care, with your agreement or where needed for your safety.</li>
       <li>
-        With service providers who help us run the clinic and this website (for example, our website host, which stores
-        contact-form submissions). They may only use it on our instructions.
+        With service providers who help us run the clinic and this website (for example, our website host, and FormSubmit,
+        which delivers contact-form submissions to our email inbox). They may only use it on our instructions.
       </li>
       <li>Where the law requires it, for example in response to a lawful request from a court or regulator.</li>
     </ul>
