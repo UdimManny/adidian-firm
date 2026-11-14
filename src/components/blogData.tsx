@@ -2,7 +2,7 @@ export const blogDatas = {
 "pain-management": {
     id: "pain-management",
     title: "Pain Management",
-    image: "/images/image_four.jpg",
+    image: "/image_four.jpg",
     shortDescription: "Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.",
     content: `
       <article class="service-article">
@@ -69,7 +69,7 @@ export const blogDatas = {
   "sports-rehabilitation": {
     id: "sports-rehabilitation",
     title: "Sports Rehabilitation",
-    image: "image_six.jpg",
+    image: "/image_six.jpg",
     shortDescription:
       "Specialized treatment for sports injuries and performance enhancement for athletes of all levels.",
     content: `
@@ -132,7 +132,7 @@ export const blogDatas = {
     <h3>Conclusion</h3>
     <p>Sports injuries are common but often preventable. Awareness, proper preparation, and timely treatment are key to minimizing risk and ensuring a safe return to sports and exercise.</p>
 
-    <p><strong>For consultations and treatments, <a href="#">book us now</a>.</strong></p>
+    <p><strong>For consultations and treatments, <a href="/contact">book us now</a>.</strong></p>
   `,
   },
 
@@ -140,7 +140,7 @@ export const blogDatas = {
   "womens-health": {
     id: "womens-health",
     title: "Women's Health",
-    image: "image_ten_one.jpg",
+    image: "/image_ten_one.jpg",
     shortDescription:
       "Specialized physiotherapy for women's health, including pre-natal and post-partum care.",
     content: `
@@ -201,7 +201,7 @@ export const blogDatas = {
   "neurological-rehabilitation": {
     id: "neurological-rehabilitation",
     title: "Neurological Rehabilitation",
-    image: "image_two.jpg",
+    image: "/image_two.jpg",
     shortDescription:
       "Specialized therapy for neurological conditions to improve function and independence.",
     content: `
@@ -271,7 +271,7 @@ export const blogDatas = {
   "occupational-therapy": {
     id: "occupational-therapy",
     title: "Occupational Therapy and Ergonomics",
-    image: "image_five.jpg",
+    image: "/image_five.jpg",
     shortDescription:
       "Workplace ergonomics and occupational health solutions to prevent work-related injuries.",
     content: `
@@ -314,14 +314,14 @@ export const blogDatas = {
     <h3>Conclusion</h3>
     <p>Occupational therapy and ergonomics together create safer, healthier, and more productive environments. By focusing on the fit between the person, their tasks, and their environment, occupational therapists play a vital role in preventing injury and promoting optimal performance in all areas of life.</p>
 
-    <p><strong>For more information or consultations, <a href="#">book us now</a>.</strong></p>
+    <p><strong>For more information or consultations, <a href="/contact">book us now</a>.</strong></p>
   `,
   },
 
   "pediatrics": {
     id: "pediatrics",
     title: "Pediatric Physiotherapy",
-    image: "image_seven.jpg",
+    image: "/image_seven.jpg",
     shortDescription:
       "Specialized physiotherapy services for children and adolescents.",
     content: `<h2>Pediatric Physiotherapy</h2>
@@ -400,7 +400,7 @@ export const blogDatas = {
   "geriatric-care": {
     id: "geriatric-care",
     title: "Geriatric Care",
-    image: "image_ten.jpg",
+    image: "/image_ten.jpg",
     shortDescription:
       "Specialized physiotherapy services for older adults to maintain independence, mobility, and quality of life.",
     content: `
@@ -494,14 +494,14 @@ export const blogDatas = {
     <h3>Conclusion</h3>
     <p>Geriatric physiotherapy is a vital component of healthcare for older adults, empowering them to maintain mobility, strength, and independence. Through targeted interventions like exercise, balance training, and pain management, we help seniors lead active, fulfilling lives. Early intervention and consistent therapy can significantly enhance well-being and quality of life.</p>
 
-    <p><strong>For more information, consultations, or treatments, <a href="#">book us now</a>.</strong></p>
+    <p><strong>For more information, consultations, or treatments, <a href="/contact">book us now</a>.</strong></p>
   `,
   },
 
   "cardiovascular-rehabilitation": {
     id: "cardiovascular-rehabilitation",
     title: "Cardiovascular Rehabilitation",
-    image: "image_ten.jpg",
+    image: "/image_ten.jpg",
     shortDescription:
       "Specialized physiotherapy services for older adults to maintain independence and quality of life.",
     //  content: `
@@ -671,7 +671,7 @@ export const blogDatas = {
   "relaxation-massage": {
     id: "relaxation-massage",
     title: "Relaxation Massage",
-    image: "image_massage.jpg",
+    image: "/massage.jpeg",
     shortDescription:
       "Gentle massage therapy to reduce stress, promote relaxation, and enhance overall well-being.",
     content: `

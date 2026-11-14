@@ -1,24 +1,51 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Calendar, Phone, ArrowLeft } from 'lucide-react';
-import { blogDatas } from '../components/blogData'; 
+import { blogDatas } from '../components/blogData';
+import { SEO } from '../components/SEO';
+import NotFound from './NotFound';
+import { BUSINESS_ID, absoluteUrl } from '../seo/site';
 
-const  BlogPostDetails = () => {
-  const { serviceId } = useParams();
-  
-  const post = blogDatas[serviceId];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [serviceId]);
+const BlogPostDetails = () => {
+  const { serviceId = '' } = useParams();
+  const post = blogDatas[serviceId as keyof typeof blogDatas];
 
   if (!post) {
-    return <Navigate to="/" replace />;
+    return <NotFound />;
   }
+
+  const path = `/services/${post.id}`;
+  const title = `${post.title} in Abuja | Adidian Physiotherapy Clinic`;
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title={title}
+        description={`${post.shortDescription} ${post.title} at our physiotherapy clinic in Area 11, Garki, Abuja. Call 070-6587-3379 to book.`}
+        path={path}
+        image={post.image}
+        breadcrumbs={[
+          { name: 'Services', path: '/services' },
+          { name: post.title, path },
+        ]}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'MedicalWebPage',
+            name: title,
+            url: absoluteUrl(path),
+            about: { '@type': 'MedicalTherapy', name: post.title, description: post.shortDescription },
+            mainEntity: {
+              '@type': 'Service',
+              serviceType: post.title,
+              name: `${post.title} in Abuja`,
+              description: post.shortDescription,
+              provider: { '@id': BUSINESS_ID },
+              areaServed: { '@type': 'City', name: 'Abuja' },
+              url: absoluteUrl(path),
+            },
+          },
+        ]}
+      />
       <section className="relative bg-blue-600 text-white py-20">
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div 
@@ -37,7 +64,7 @@ const  BlogPostDetails = () => {
           </div>
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              {post.title}
+              {post.title} in Abuja
             </h1>
             <p className="text-xl opacity-90 leading-relaxed">
               {post.shortDescription}
@@ -88,7 +115,7 @@ const  BlogPostDetails = () => {
                     {service.shortDescription}
                   </p>
                   <Link
-                    to={`/blog/${service.id}`}
+                    to={`/services/${service.id}`}
                     className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
                   >
                     Learn More →

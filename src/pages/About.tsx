@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Eye, Heart, Users } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const About: React.FC = () => {
   const values = [
@@ -14,6 +15,11 @@ const About: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="About Adidian Physiotherapy Clinic | Physiotherapists in Garki, Abuja"
+        description="Meet Adidian Physiotherapy Clinic: a physiotherapy practice in Area 11, Garki, Abuja that started as a home-care service. Our mission, values and approach to care."
+        breadcrumbs={[{ name: "About", path: "/about" }]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,8 +39,8 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <img
-              src='image_eight.jpg'
-                // src="https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/image_eight.jpg'
+                // src="https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg"
                 alt="Black physiotherapist with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />
@@ -150,8 +156,8 @@ const About: React.FC = () => {
             
             <div>
               <img
-              src='blackphysio.webp'
-                // src="blackphysio.webp?auto=compress&cs=tinysrgb&w=800"
+              src='/blackphysio.webp'
+                // src="/blackphysio.webp"
                 alt="Black physiotherapist consulting with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

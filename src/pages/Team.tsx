@@ -1,19 +1,20 @@
 import React from 'react';
 import { Award, GraduationCap, Heart, Star } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const Team: React.FC = () => {
   const teamMembers = [
     {
       name: 'Dr. Diana Daniel. O.',
       role: 'Licensed and Experienced',
-      image: 'fine_doc.jpg',
+      image: '/fine_doc.jpg',
       specialties: ['Physiotherapist (DPT)', ' Ergonomist', 'Hydrotherapist'],
       experience: '5+ years'
     },
     {
       name: 'Dr. C. J. Otikpa',
       role: "Womens health and wellness coach",
-      image: 'handsome_doc.jpg',
+      image: '/handsome_doc.jpg',
       specialties: ['Physiotherapist (DPT)'],
       experience: '4+ years'
     },
@@ -45,6 +46,11 @@ const Team: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Our Physiotherapists in Abuja | Adidian Physiotherapy Clinic Team"
+        description="Meet the licensed physiotherapists at Adidian Physiotherapy Clinic in Area 11, Garki, Abuja, their specialties and experience."
+        breadcrumbs={[{ name: "Our Team", path: "/team" }]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,7 +135,7 @@ const Team: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-              src='image_eight.jpg'
+              src='/image_eight.jpg'
                 alt="Black healthcare team collaborating"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

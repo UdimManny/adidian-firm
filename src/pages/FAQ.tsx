@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus, Phone, Mail } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -55,12 +56,28 @@ const FAQ: React.FC = () => {
     }
   ];
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  };
+
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Physiotherapy FAQs | Adidian Physiotherapy Clinic Abuja"
+        description="Answers to common questions about physiotherapy at our Abuja clinic: first visits, session length, insurance/HMO, home visits, opening hours and more."
+        breadcrumbs={[{ name: "FAQ", path: "/faq" }]}
+        jsonLd={[faqSchema]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -109,8 +126,8 @@ const FAQ: React.FC = () => {
             <div>
               <img
 
-              src='image_nine.jpg'
-                // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src='/image_nine.jpg'
+                // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg"
                 alt="Physiotherapist at Adidian clinic in Abuja consulting with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

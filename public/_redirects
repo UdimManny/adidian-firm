@@ -1,0 +1,2 @@
+# Old service URLs → new service pages (permanent)
+/blog/:id  /services/:id  301

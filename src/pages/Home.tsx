@@ -9,75 +9,80 @@ import {
   Heart,
   Users,
 } from "lucide-react";
+import { SEO } from '../components/SEO';
 
 const Home: React.FC = () => {
   const services = [
     {
       id: "pain-management",
       title: "Pain Management",
-      image: "pain.jpg?auto=compress&cs=tinysrgb&w=800",
+      image: "/pain.jpg",
       description:
         "Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.",
     },
     {
       id: "sports-rehabilitation",
       title: "Sports Rehabilitation",
-      image: "sports.jpg?auto=compress&cs=tinysrgb&w=800",
+      image: "/sports.jpg",
       description:
         "Specialized treatment for sports injuries and performance enhancement for athletes of all levels.",
     },
     {
       id: "womens-health",
       title: "Women's Health",
-      image: "women.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/women.jpeg",
       description:
         "Specialized physiotherapy for women's health, including pre-natal and post-partum care.",
     },
     {
       id: "neurological-rehabilitation",
       title: "Neurological Rehabilitation",
-      image: "neurological.jpg?auto=compress&cs=tinysrgb&w=800",
+      image: "/neurological.jpg",
       description:
         "Specialized therapy for neurological conditions to improve function and independence.",
     },
     {
       id: "occupational-therapy",
       title: "Occupational Therapy and Ergonomics",
-      image: "ergonomics.png?auto=compress&cs=tinysrgb&w=800",
+      image: "/ergonomics.png",
       description:
         "Workplace ergonomics and occupational health solutions to prevent work-related injuries.",
     },
     {
       id: "pediatrics",
       title: "Pediatrics",
-      image: "Pediatrics.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/Pediatrics.jpeg",
       description:
         "Specialized physiotherapy services for children and adolescents.",
     },
     {
       id: "geriatric-care",
       title: "Geriatric Care",
-      image: "geriatics.avif?auto=compress&cs=tinysrgb&w=800",
+      image: "/geriatics.avif",
       description:
         "Specialized physiotherapy services for older adults to maintain independence and quality of life.",
     },
     {
       id: "cardiovascular-rehabilitation",
       title: "Cardiovascular Rehabilitation",
-      image: "cardio.jpg?auto=compress&cs=tinysrgb&w=800",
+      image: "/cardio.jpg",
       description:
         "Specialized rehabilitation for heart conditions and cardiovascular health improvement.",
     },
     {
       id: "relaxation-massage",
       title: "Relaxation Massage",
-      image: "massage.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/massage.jpeg",
       description:
         "Gentle massage therapy to reduce stress, promote relaxation, and enhance overall well-being.",
     },
   ];
   return (
     <>
+      <SEO
+        title="Physiotherapy Clinic in Abuja | Adidian Physiotherapy, Area 11 Garki"
+        description="Physiotherapy clinic in Area 11, Garki, Abuja. Treatment for back and neck pain, sports injuries, stroke rehab, women's health and more. Home visits available. Call 070-6587-3379."
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,8 +135,8 @@ const Home: React.FC = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="image_nine.jpg"
-                  // src="https://images.pexels.com/photos/7659731/pexels-photo-7659731.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/image_nine.jpg"
+                  // src="https://images.pexels.com/photos/7659731/pexels-photo-7659731.jpeg"
                   alt="Black physiotherapist working with patient"
                   className="w-full h-96 object-cover"
                 />
@@ -240,13 +245,13 @@ const Home: React.FC = () => {
                 Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.
               </p>
               <Link
-                to={`/blog/${this.id}`}
+                to={`/services/${this.id}`}
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
               >
                 Learn More →
               </Link>
               <Link
-                to={`/blog/${this.id}`}
+                to={`/services/${this.id}`}
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
               >
                 Learn More →
@@ -254,7 +259,7 @@ const Home: React.FC = () => {
             </div>
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
               <img
-              src='image_one.jpg'
+              src='/image_one.jpg'
                 alt="Black woman with baby receiving postnatal care"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
@@ -263,7 +268,7 @@ const Home: React.FC = () => {
                 Specialized physiotherapy for women's health, including pre-natal and post-partum care.
               </p>
               <Link
-                to={`/blog/${this.id}`}
+                to={`/services/${this.id}`}
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
               >
                 Learn More →
@@ -288,7 +293,7 @@ const Home: React.FC = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <Link
-                  to={`/blog/${service.id}`}
+                  to={`/services/${service.id}`}
                   className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
                 >
                   Learn More →

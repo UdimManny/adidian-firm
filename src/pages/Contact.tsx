@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -33,6 +34,11 @@ const Contact: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Contact & Book a Physiotherapist in Abuja | Adidian Physiotherapy"
+        description="Book a physiotherapy appointment at No 32 Lord Lugard Street, Area 11, Garki, Abuja. Call 070-6587-3379, email us or get directions. Open Mon\u2013Sat."
+        breadcrumbs={[{ name: "Contact", path: "/contact" }]}
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -305,7 +311,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="blackphysio.webp?auto=compress&cs=tinysrgb&w=800"
+                src="/blackphysio.webp"
                 alt="Black physiotherapist providing home care"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

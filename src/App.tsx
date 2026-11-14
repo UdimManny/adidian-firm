@@ -1,39 +1,48 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import ServiceDetail from './pages/ServiceDetail';
 import Team from './pages/Team';
 import Testimonials from './pages/Testimonials';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPostDetails from './pages/BlogPostDetails';
+import NotFound from './pages/NotFound';
 
+// Old service URLs lived under /blog/:id. Netlify 301s them too (public/_redirects).
+const LegacyBlogRedirect = () => {
+  const { serviceId } = useParams();
+  return <Navigate to={`/services/${serviceId}`} replace />;
+};
+
+// Router-agnostic so the same tree is used by the browser (BrowserRouter)
+// and by the build-time prerender (StaticRouter).
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-white">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-              <Route path="/services/:serviceId" element={<ServiceDetail />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/blog/:serviceId" element={<BlogPostDetails />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="min-h-screen bg-white">
+      <ScrollToTop />
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/:serviceId" element={<BlogPostDetails />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog/:serviceId" element={<LegacyBlogRedirect />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

@@ -10,7 +10,7 @@ const Blog: React.FC = () => {
       <SEO 
         title="Physiotherapy Education & Health Resources | Abuja Clinic"
         description="Access valuable physiotherapy information, expert advice, and educational content about physical therapy and wellness from Adidian Physiotherapy Clinic in Abuja."
-        keywords="physiotherapy education Abuja, health resources Abuja, physical therapy blog Abuja, physiotherapy clinic Abuja, physio education"
+        breadcrumbs={[{ name: 'Resources', path: '/blog' }]}
       />
       <div className="pt-20">
         {/* Hero Section */}
@@ -102,7 +102,7 @@ const Blog: React.FC = () => {
             {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img
-                src='image_seven.jpg'
+                src='/image_seven.jpg'
                   // src="https://images.pexels.com/photos/7659655/pexels-photo-7659655.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black woman doing physiotherapy exercises"
                   className="w-full h-48 object-cover"
@@ -119,7 +119,7 @@ const Blog: React.FC = () => {
 
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img
-                src='image_four.jpg'
+                src='/image_four.jpg'
                   // src="https://images.pexels.com/photos/5794063/pexels-photo-5794063.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black athlete in rehabilitation"
                   className="w-full h-48 object-cover"
@@ -136,7 +136,7 @@ const Blog: React.FC = () => {
 
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <img
-                src='image_ten.jpg'
+                src='/image_ten.jpg'
                   // src="https://images.pexels.com/photos/7659729/pexels-photo-7659729.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black woman with baby in postnatal care"
                   className="w-full h-48 object-cover"
@@ -167,7 +167,7 @@ const Blog: React.FC = () => {
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link
-                    to={`/blog/${service.id}`}
+                    to={`/services/${service.id}`}
                     className="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-200"
                   >
                     Learn More →
