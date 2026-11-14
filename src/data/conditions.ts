@@ -42,7 +42,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for low back pain at our clinic in Area 11, Garki, Abuja. Assessment, hands-on treatment and a home exercise plan to get you moving again. ${CALL}`,
     h1: 'Back Pain Treatment in Abuja',
     tagline: 'Find out what is driving your back pain and get a clear plan to move comfortably again.',
-    image: '/pain.jpg',
+    image: '/back-pain.jpg',
     intro: [
       'Low back pain is one of the most common reasons people see a physiotherapist. Long hours at a desk, long drives across Abuja, lifting at home or work, and simply not moving enough can all play a part.',
       'The good news is that most back pain is not caused by serious damage, and the right exercise and advice usually help a great deal. At Adidian Physiotherapy Clinic in Area 11, Garki, we assess your back properly, explain what is going on in plain language and build a treatment plan around your daily life.',

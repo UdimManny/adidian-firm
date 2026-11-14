@@ -154,7 +154,7 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <div className="text-center md:text-left">
               <p className="text-gray-400">
-                © 2024 Adidian Physiotherapy Clinic. All rights reserved.
+                © {new Date().getFullYear()} Adidian Physiotherapy Clinic. All rights reserved.
               </p>
             </div>
             
@@ -166,8 +166,8 @@ const Footer: React.FC = () => {
                 <Link to="/terms" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                   Terms of Service
                 </Link>
-                <Link to="/hipaa" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                  HIPAA Compliance
+                <Link to="/patient-confidentiality" className="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                  Patient Confidentiality
                 </Link>
               </div>
             </div>

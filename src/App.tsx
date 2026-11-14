@@ -15,6 +15,7 @@ import NotFound from './pages/NotFound';
 import Conditions from './pages/Conditions';
 import ConditionDetail from './pages/ConditionDetail';
 import HomePhysiotherapy from './pages/HomePhysiotherapy';
+import { Privacy, Terms, PatientConfidentiality } from './pages/Legal';
 
 // Old service URLs lived under /blog/:id. Netlify 301s them too (public/_redirects).
 const LegacyBlogRedirect = () => {
@@ -43,6 +44,10 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/patient-confidentiality" element={<PatientConfidentiality />} />
+          <Route path="/hipaa" element={<Navigate to="/patient-confidentiality" replace />} />
           <Route path="/blog/:serviceId" element={<LegacyBlogRedirect />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -18,6 +18,9 @@ export const routes = [
   '/faq',
   '/blog',
   '/contact',
+  '/privacy',
+  '/terms',
+  '/patient-confidentiality',
 ];
 
 export function render(url: string) {
