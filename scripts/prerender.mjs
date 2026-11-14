@@ -20,7 +20,9 @@ const page = (url) => {
 };
 
 for (const url of routes) {
-  const file = url === '/' ? path.join(dist, 'index.html') : path.join(dist, url, 'index.html');
+  // /faq -> faq.html (not faq/index.html): Netlify serves it at /faq with no
+  // trailing-slash redirect, so the canonical URLs resolve directly.
+  const file = url === '/' ? path.join(dist, 'index.html') : path.join(dist, `${url}.html`);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, page(url));
   console.log('prerendered', url);
