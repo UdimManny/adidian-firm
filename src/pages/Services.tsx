@@ -1,6 +1,8 @@
 import React from 'react';
 import { Shield, Activity, Zap, Waves, Stethoscope, Users, Brain, Heart } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { Link } from 'react-router-dom';
+import { conditions } from '../data/conditions';
 
 const Services: React.FC = () => {
   const serviceCategories = [
@@ -231,6 +233,30 @@ const Services: React.FC = () => {
       </section>
 
       {/* Call to Action */}
+      {/* Conditions We Treat */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Conditions We Treat in Abuja</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Physiotherapy at our Garki clinic or in your home for these common problems and more.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {conditions.map((c) => (
+              <Link
+                key={c.slug}
+                to={c.path}
+                className="rounded-xl border border-gray-200 p-5 hover:border-blue-600 hover:shadow-md transition-all"
+              >
+                <h3 className="font-bold text-gray-900 mb-1">{c.h1}</h3>
+                <span className="text-blue-600 text-sm font-semibold">Learn more →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>

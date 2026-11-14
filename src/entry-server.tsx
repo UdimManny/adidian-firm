@@ -4,12 +4,15 @@ import { HelmetProvider, type HelmetServerState } from 'react-helmet-async';
 import { StaticRouter } from 'react-router-dom';
 import App from './App';
 import { services } from './data/services';
+import { conditions } from './data/conditions';
 
 export const routes = [
   '/',
   '/about',
   '/services',
   ...services.map((s) => `/services/${s.id}`),
+  '/conditions',
+  ...conditions.map((c) => c.path),
   '/team',
   '/testimonials',
   '/faq',

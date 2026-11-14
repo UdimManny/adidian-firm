@@ -4,22 +4,23 @@ import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from 'lucide-react
 
 const Footer: React.FC = () => {
   const services = [
-    'Pain Management',
-    'Sports Injury Rehabilitation',
-    'Neurological Rehabilitation',
-    'Women\'s Health Physiotherapy',
-    'Pediatric Physiotherapy',
-    'Occupational Therapy'
+    { path: '/services/pain-management', label: 'Pain Management' },
+    { path: '/services/sports-rehabilitation', label: 'Sports Injury Rehabilitation' },
+    { path: '/services/neurological-rehabilitation', label: 'Neurological Rehabilitation' },
+    { path: '/services/womens-health', label: 'Women\'s Health Physiotherapy' },
+    { path: '/services/pediatrics', label: 'Pediatric Physiotherapy' },
+    { path: '/home-physiotherapy-abuja', label: 'Home Physiotherapy in Abuja' },
   ];
 
   const quickLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Our Services' },
+    { path: '/conditions', label: 'Conditions We Treat' },
     { path: '/team', label: 'Meet the Team' },
     { path: '/testimonials', label: 'Patient Testimonials' },
     { path: '/faq', label: 'FAQs' },
-    { path: '/resources', label: 'Health Resources' },
+    { path: '/blog', label: 'Health Resources' },
     { path: '/contact', label: 'Contact Us' }
   ];
 
@@ -91,10 +92,10 @@ const Footer: React.FC = () => {
               {services.map((service, index) => (
                 <li key={index}>
                   <Link 
-                    to="/services"
+                    to={service.path}
                     className="text-gray-300 hover:text-blue-400 transition-colors duration-200"
                   >
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
