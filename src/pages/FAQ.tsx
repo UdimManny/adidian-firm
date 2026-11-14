@@ -124,9 +124,9 @@ const FAQ: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img
+              <img loading="lazy" decoding="async"
 
-              src='/image_nine.jpg'
+              src='/image_nine.webp'
                 // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg"
                 alt="Physiotherapist at Adidian clinic in Abuja consulting with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"

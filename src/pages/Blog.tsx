@@ -101,8 +101,8 @@ const Blog: React.FC = () => {
 
             {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img
-                src='/image_seven.jpg'
+                <img loading="lazy" decoding="async"
+                src='/image_seven.webp'
                   // src="https://images.pexels.com/photos/7659655/pexels-photo-7659655.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black woman doing physiotherapy exercises"
                   className="w-full h-48 object-cover"
@@ -118,8 +118,8 @@ const Blog: React.FC = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img
-                src='/image_four.jpg'
+                <img loading="lazy" decoding="async"
+                src='/image_four.webp'
                   // src="https://images.pexels.com/photos/5794063/pexels-photo-5794063.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black athlete in rehabilitation"
                   className="w-full h-48 object-cover"
@@ -135,8 +135,8 @@ const Blog: React.FC = () => {
               </div>
 
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <img
-                src='/image_ten.jpg'
+                <img loading="lazy" decoding="async"
+                src='/image_ten.webp'
                   // src="https://images.pexels.com/photos/7659729/pexels-photo-7659729.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Black woman with baby in postnatal care"
                   className="w-full h-48 object-cover"
@@ -157,7 +157,7 @@ const Blog: React.FC = () => {
                   key={service.id}
                   className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
                 >
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={service.image}
                     alt={service.title}
                     className="w-full h-48 object-cover rounded-lg mb-6"

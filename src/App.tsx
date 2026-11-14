@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import MobileActionBar from './components/MobileActionBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -28,7 +29,7 @@ const LegacyBlogRedirect = () => {
 // and by the build-time prerender (StaticRouter).
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-16 lg:pb-0">
       <ScrollToTop />
       <Header />
       <main>
@@ -55,6 +56,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <MobileActionBar />
     </div>
   );
 }

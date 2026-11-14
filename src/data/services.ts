@@ -2,7 +2,7 @@ export const services = [
     {
       id: "pain-management",
       title: "Pain Management",
-      image: "/pain.jpg",
+      image: "/pain.webp",
       description:
         "Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.",
       details: {
@@ -20,7 +20,7 @@ export const services = [
     {
       id: "sports-rehabilitation",
       title: "Sports Rehabilitation",
-      image: "/sports.jpg",
+      image: "/sports.webp",
       description:
         "Specialized treatment for sports injuries and performance enhancement for athletes of all levels.",
       details: {
@@ -38,7 +38,7 @@ export const services = [
     {
       id: "womens-health",
       title: "Women's Health",
-      image: "/women.jpeg",
+      image: "/women.webp",
       description:
         "Specialized physiotherapy for women's health, including pre-natal and post-partum care.",
       details: {
@@ -56,7 +56,7 @@ export const services = [
     {
       id: "neurological-rehabilitation",
       title: "Neurological Rehabilitation",
-      image: "/neurological.jpg",
+      image: "/neurological.webp",
       description:
         "Specialized therapy for neurological conditions to improve function and independence.",
        details: {
@@ -74,7 +74,7 @@ export const services = [
     {
       id: "occupational-therapy",
       title: "Occupational Therapy and Ergonomics",
-      image: "/ergonomics.png",
+      image: "/ergonomics.webp",
       description:
         "Workplace ergonomics and occupational health solutions to prevent work-related injuries.",
        details: {
@@ -92,7 +92,7 @@ export const services = [
     {
       id: "pediatrics",
       title: "Pediatrics",
-      image: "/Pediatrics.jpeg",
+      image: "/Pediatrics.webp",
       description:
         "Specialized physiotherapy services for children and adolescents.",
        details: {
@@ -128,7 +128,7 @@ export const services = [
     {
       id: "cardiovascular-rehabilitation",
       title: "Cardiovascular Rehabilitation",
-      image: "/cardio.jpg",
+      image: "/cardio.webp",
       description:
         "Specialized rehabilitation for heart conditions and cardiovascular health improvement.",
        details: {
@@ -146,7 +146,7 @@ export const services = [
     {
       id: "relaxation-massage",
       title: "Relaxation Massage",
-      image: "/massage.jpeg",
+      image: "/massage.webp",
       description:
         "Gentle massage therapy to reduce stress, promote relaxation, and enhance overall well-being.",
        details: {

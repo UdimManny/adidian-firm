@@ -2,7 +2,7 @@ export const blogDatas = {
 "pain-management": {
     id: "pain-management",
     title: "Pain Management",
-    image: "/image_four.jpg",
+    image: "/image_four.webp",
     shortDescription: "Comprehensive pain relief solutions for chronic and acute conditions using evidence-based techniques.",
     content: `
       <article class="service-article">
@@ -69,7 +69,7 @@ export const blogDatas = {
   "sports-rehabilitation": {
     id: "sports-rehabilitation",
     title: "Sports Rehabilitation",
-    image: "/image_six.jpg",
+    image: "/image_six.webp",
     shortDescription:
       "Specialized treatment for sports injuries and performance enhancement for athletes of all levels.",
     content: `
@@ -140,7 +140,7 @@ export const blogDatas = {
   "womens-health": {
     id: "womens-health",
     title: "Women's Health",
-    image: "/image_ten_one.jpg",
+    image: "/image_ten_one.webp",
     shortDescription:
       "Specialized physiotherapy for women's health, including pre-natal and post-partum care.",
     content: `
@@ -201,7 +201,7 @@ export const blogDatas = {
   "neurological-rehabilitation": {
     id: "neurological-rehabilitation",
     title: "Neurological Rehabilitation",
-    image: "/image_two.jpg",
+    image: "/image_two.webp",
     shortDescription:
       "Specialized therapy for neurological conditions to improve function and independence.",
     content: `
@@ -271,7 +271,7 @@ export const blogDatas = {
   "occupational-therapy": {
     id: "occupational-therapy",
     title: "Occupational Therapy and Ergonomics",
-    image: "/image_five.jpg",
+    image: "/image_five.webp",
     shortDescription:
       "Workplace ergonomics and occupational health solutions to prevent work-related injuries.",
     content: `
@@ -321,7 +321,7 @@ export const blogDatas = {
   "pediatrics": {
     id: "pediatrics",
     title: "Pediatric Physiotherapy",
-    image: "/image_seven.jpg",
+    image: "/image_seven.webp",
     shortDescription:
       "Specialized physiotherapy services for children and adolescents.",
     content: `<h2>Pediatric Physiotherapy</h2>
@@ -400,7 +400,7 @@ export const blogDatas = {
   "geriatric-care": {
     id: "geriatric-care",
     title: "Geriatric Care",
-    image: "/image_ten.jpg",
+    image: "/image_ten.webp",
     shortDescription:
       "Specialized physiotherapy services for older adults to maintain independence, mobility, and quality of life.",
     content: `
@@ -501,7 +501,7 @@ export const blogDatas = {
   "cardiovascular-rehabilitation": {
     id: "cardiovascular-rehabilitation",
     title: "Cardiovascular Rehabilitation",
-    image: "/image_ten.jpg",
+    image: "/image_ten.webp",
     shortDescription:
       "Specialized physiotherapy services for older adults to maintain independence and quality of life.",
     //  content: `
@@ -671,7 +671,7 @@ export const blogDatas = {
   "relaxation-massage": {
     id: "relaxation-massage",
     title: "Relaxation Massage",
-    image: "/massage.jpeg",
+    image: "/massage.webp",
     shortDescription:
       "Gentle massage therapy to reduce stress, promote relaxation, and enhance overall well-being.",
     content: `

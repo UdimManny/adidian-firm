@@ -27,7 +27,7 @@ const Conditions = () => (
             to={c.path}
             className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
           >
-            <img src={c.image} alt={`${c.name} treatment in Abuja`} className="w-full h-48 object-cover" />
+            <img loading="lazy" decoding="async" src={c.image} alt={`${c.name} treatment in Abuja`} className="w-full h-48 object-cover" />
             <div className="p-6">
               <h2 className="text-xl font-bold text-gray-900 mb-2">{c.h1}</h2>
               <p className="text-gray-600 mb-4">{c.tagline}</p>

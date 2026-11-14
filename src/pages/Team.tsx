@@ -7,14 +7,14 @@ const Team: React.FC = () => {
     {
       name: 'Dr. Diana Daniel. O.',
       role: 'Licensed and Experienced',
-      image: '/fine_doc.jpg',
+      image: '/fine_doc.webp',
       specialties: ['Physiotherapist (DPT)', ' Ergonomist', 'Hydrotherapist'],
       experience: '5+ years'
     },
     {
       name: 'Dr. C. J. Otikpa',
       role: "Womens health and wellness coach",
-      image: '/handsome_doc.jpg',
+      image: '/handsome_doc.webp',
       specialties: ['Physiotherapist (DPT)'],
       experience: '4+ years'
     },
@@ -71,7 +71,7 @@ const Team: React.FC = () => {
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-w-1 aspect-h-1">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={member.image}
                     alt={member.name}
                     className="w-full h-80 object-contain"
@@ -134,8 +134,8 @@ const Team: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img
-              src='/image_eight.jpg'
+              <img loading="lazy" decoding="async"
+              src='/image_eight.webp'
                 alt="Black healthcare team collaborating"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
               />

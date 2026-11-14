@@ -105,7 +105,7 @@ const BlogPostDetails = () => {
               .slice(0, 3) 
               .map((service) => (
                 <div key={service.id} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={service?.image}
                     alt={service.title}
                     className="w-full h-40 object-cover rounded-lg mb-4"
