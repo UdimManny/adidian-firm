@@ -36,7 +36,7 @@ const Services: React.FC = () => {
       title: 'Therapeutic Services',
       icon: Zap,
       color: 'bg-purple-50 text-purple-600',
-      image: '/therapy.png',
+      image: '/therapy-opt.webp',
       services: [
         'Manual therapy',
         'Exercise therapy',
@@ -49,7 +49,7 @@ const Services: React.FC = () => {
       title: 'Specialized Services',
       icon: Waves,
       color: 'bg-orange-50 text-orange-600',
-      image: '/therapy.jpg',
+      image: '/therapy.webp',
       services: [
         'Sports physiotherapy',
         "Women's health physiotherapy",
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
       title: 'Diagnostic Services',
       icon: Stethoscope,
       color: 'bg-red-50 text-red-600',
-      image: '/diagnosis.jpg',
+      image: '/diagnosis.webp',
       services: [
         'Biomechanical assessment',
         'Movement analysis',
@@ -74,7 +74,7 @@ const Services: React.FC = () => {
       title: 'Supportive Services',
       icon: Heart,
       color: 'bg-pink-50 text-pink-600',
-      image: '/support.jpg',
+      image: '/support.webp',
       services: [
         'Disability support and advocacy',
         'Chronic disease management',
@@ -112,15 +112,15 @@ const Services: React.FC = () => {
               const IconComponent = category.icon;
               return (
                 <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                  <div className="h-48 overflow-hidden">
-                    <img
+                  <div className="h-36 md:h-48 overflow-hidden">
+                    <img loading="lazy" decoding="async"
                       src={category.image}
                       alt={`${category.title} - Black healthcare professional`}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <div className="p-8">
-                    <div className={`w-16 h-16 rounded-full ${category.color} flex items-center justify-center mb-6`}>
+                  <div className="p-6 md:p-8">
+                    <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full ${category.color} flex items-center justify-center mb-4 md:mb-6`}>
                       <IconComponent size={32} />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">{category.title}</h3>
@@ -177,8 +177,8 @@ const Services: React.FC = () => {
                 </div>
               </div>
               <div>
-                <img
-               src='/image_nine.jpg'
+                <img loading="lazy" decoding="async"
+               src='/image_nine.webp'
                   // src="https://images.pexels.com/photos/5793953/pexels-photo-5793953.jpeg"
                   alt="Black physiotherapist consulting with patient"
                   className="rounded-xl shadow-lg w-full h-80 object-cover"
@@ -292,8 +292,8 @@ const Services: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <img
-              src='/therapy.png'
+              <img loading="lazy" decoding="async"
+              src='/therapy-opt.webp'
                 // src="hjpeg"
                 alt="Black physiotherapist in rehabilitation center"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"

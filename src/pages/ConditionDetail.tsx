@@ -113,7 +113,7 @@ export const ConditionPage = ({ condition: c }: { condition: Condition }) => {
               </a>
             </div>
           </div>
-          <img
+          <img fetchPriority="high"
             src={c.image}
             alt={`${c.name} physiotherapy at Adidian Physiotherapy Clinic, Abuja`}
             className="rounded-2xl shadow-xl w-full h-80 object-cover"

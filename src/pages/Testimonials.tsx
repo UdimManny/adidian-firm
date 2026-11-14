@@ -150,8 +150,8 @@ const Testimonials: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img
-              src='/image_five.jpg'
+              <img loading="lazy" decoding="async"
+              src='/image_five.webp'
                 alt="Before and after physiotherapy treatment"
                 className="w-full h-64 object-cover"
               />
@@ -168,8 +168,8 @@ const Testimonials: React.FC = () => {
             </div>
 
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img
-              src='/image_two.jpg'
+              <img loading="lazy" decoding="async"
+              src='/image_two.webp'
                 // src="https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Elderly patient regaining mobility"
                 className="w-full h-64 object-cover"

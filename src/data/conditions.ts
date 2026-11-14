@@ -42,7 +42,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for low back pain at our clinic in Area 11, Garki, Abuja. Assessment, hands-on treatment and a home exercise plan to get you moving again. ${CALL}`,
     h1: 'Back Pain Treatment in Abuja',
     tagline: 'Find out what is driving your back pain and get a clear plan to move comfortably again.',
-    image: '/back-pain.jpg',
+    image: '/back-pain.webp',
     intro: [
       'Low back pain is one of the most common reasons people see a physiotherapist. Long hours at a desk, long drives across Abuja, lifting at home or work, and simply not moving enough can all play a part.',
       'The good news is that most back pain is not caused by serious damage, and the right exercise and advice usually help a great deal. At Adidian Physiotherapy Clinic in Area 11, Garki, we assess your back properly, explain what is going on in plain language and build a treatment plan around your daily life.',
@@ -101,7 +101,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for sciatica and nerve pain down the leg at our clinic in Garki, Abuja. Assessment, exercise and pain-relief treatment. ${CALL}`,
     h1: 'Sciatica Treatment in Abuja',
     tagline: 'Relief for pain, tingling and numbness that travels from your back down your leg.',
-    image: '/therapy.jpg',
+    image: '/therapy.webp',
     intro: [
       'Sciatica is pain that runs from the lower back or buttock down the back of the leg, sometimes as far as the foot. It happens when the sciatic nerve, or one of the nerve roots that form it, becomes irritated or compressed.',
       'Sciatica can be very painful, but most cases settle with the right care. Our physiotherapists in Area 11, Garki assess what is irritating the nerve and guide you through treatment and exercises to calm it down and restore movement.',
@@ -157,7 +157,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for neck pain and stiffness in Area 11, Garki, Abuja. Treatment for desk-related neck pain, headaches from the neck and whiplash. ${CALL}`,
     h1: 'Neck Pain Treatment in Abuja',
     tagline: 'Ease neck pain, stiffness and tension headaches, and stop them coming back.',
-    image: '/ergonomics.png',
+    image: '/ergonomics.webp',
     intro: [
       'Neck pain is especially common in people who spend long hours on laptops and phones, or behind the wheel in Abuja traffic. It often comes with tight shoulders and headaches that start at the base of the skull.',
       'Our physiotherapists find out what is loading your neck, treat the pain and stiffness, and give you simple changes and exercises so it does not keep returning.',
@@ -213,7 +213,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for knee pain in Abuja: osteoarthritis, sports injuries, ligament and meniscus problems, and rehab after knee surgery. Clinic in Area 11, Garki. ${CALL}`,
     h1: 'Knee Pain Treatment in Abuja',
     tagline: 'From arthritis to sports injuries and surgery, get your knee strong and moving again.',
-    image: '/sports.jpg',
+    image: '/sports.webp',
     intro: [
       'Knee pain can make walking, climbing stairs, praying, exercising and playing sport difficult. It affects young athletes and older adults alike, for very different reasons.',
       'At our Abuja clinic we diagnose the likely cause of your knee pain, treat it, and take you through a structured strengthening programme. Strong muscles around the knee are one of the best long-term treatments for most knee problems, including arthritis.',
@@ -270,7 +270,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapy for frozen shoulder, rotator cuff problems and shoulder pain at our clinic in Garki, Abuja. Restore movement and reduce pain. ${CALL}`,
     h1: 'Frozen Shoulder & Shoulder Pain Treatment in Abuja',
     tagline: 'Get your arm moving again and reduce pain that disturbs your sleep and daily tasks.',
-    image: '/therapy.png',
+    image: '/therapy-opt.webp',
     intro: [
       'Shoulder pain can make it hard to dress, reach overhead, carry bags or sleep on your side. Two of the most common causes we see are frozen shoulder and rotator cuff problems.',
       'Frozen shoulder (adhesive capsulitis) causes the shoulder joint to become painful and progressively stiff. It is more common between the ages of 40 and 60 and in people with diabetes. Physiotherapy helps manage the pain and restore as much movement as possible through each stage.',
@@ -325,7 +325,7 @@ export const conditions: Condition[] = [
     metaDescription: `Stroke physiotherapy in Abuja at our Garki clinic or in your home. Rehab for walking, balance, arm function and independence after a stroke. ${CALL}`,
     h1: 'Stroke Rehabilitation in Abuja',
     tagline: 'Rebuild movement, balance and independence after a stroke, at our clinic or at home.',
-    image: '/neurological.jpg',
+    image: '/neurological.webp',
     intro: [
       'A stroke can affect walking, balance, arm and hand use, speech and day-to-day independence. Physiotherapy is a central part of recovery, helping the brain and body relearn movement through regular, targeted practice.',
       'Our neurological rehabilitation team works with stroke survivors and their families in Abuja. We see patients at our clinic in Area 11, Garki, and offer home visits for people who find travelling difficult.',
@@ -383,7 +383,7 @@ export const conditions: Condition[] = [
     metaDescription: `Physiotherapist home visits across Abuja: Garki, Wuse, Maitama, Asokoro, Gwarinpa and more. Ideal after surgery or stroke, and for older adults. ${CALL}`,
     h1: 'Home Physiotherapy in Abuja',
     tagline: 'Expert physiotherapy in the comfort of your home, anywhere in Abuja.',
-    image: '/outpatient.jpeg',
+    image: '/outpatient.webp',
     intro: [
       'Adidian Physiotherapy Clinic started as a home-care physiotherapy service, and home visits are still a core part of what we do. Our physiotherapists come to you, bringing the assessment, treatment and exercise guidance you would get in the clinic.',
       'Home physiotherapy is ideal when travelling is difficult or tiring, and it lets us train the real tasks you need, like getting out of bed, using the stairs or walking around your compound, in your own environment.',

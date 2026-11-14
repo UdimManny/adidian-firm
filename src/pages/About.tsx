@@ -38,8 +38,8 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <img
-              src='/image_eight.jpg'
+              <img loading="lazy" decoding="async"
+              src='/image_eight.webp'
                 // src="https://images.pexels.com/photos/5794057/pexels-photo-5794057.jpeg"
                 alt="Black physiotherapist with patient"
                 className="rounded-2xl shadow-xl w-full h-96 object-cover"
@@ -155,7 +155,7 @@ const About: React.FC = () => {
             </div>
             
             <div>
-              <img
+              <img loading="lazy" decoding="async"
               src='/blackphysio.webp'
                 // src="/blackphysio.webp"
                 alt="Black physiotherapist consulting with patient"
