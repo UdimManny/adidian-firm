@@ -79,8 +79,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-gray-600 hover:text-blue-600">
-                      info@adidianphysiotherapyclinic.com
+                    <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="text-gray-600 hover:text-blue-600">
+                      adidianphysiotherapyclinic@gmail.com
                     </a>
                   </div>
                 </div>

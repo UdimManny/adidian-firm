@@ -125,7 +125,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-gray-600 hover:text-blue-600">
+                      <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="text-gray-600 hover:text-blue-600">
                         adidianphysiotherapyclinic@gmail.com
                       </a>
                     </div>
@@ -371,7 +371,7 @@ const Contact: React.FC = () => {
                 Send detailed questions or requests via email. We'll respond within 24 hours during business days.
               </p>
               <a
-                href="mailto:info@adidianphysiotherapyclinic.com"
+                href="mailto:adidianphysiotherapyclinic@gmail.com"
                 className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors duration-200 font-semibold"
               >
                 Send Email
