@@ -18,7 +18,7 @@ const LegalLayout = ({
   path: string;
   children: ReactNode;
 }) => (
-  <div className="pt-20">
+  <div>
     <SEO title={title} description={description} breadcrumbs={[{ name: h1, path }]} />
     <section className="bg-gradient-to-br from-blue-50 to-green-50 py-14">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

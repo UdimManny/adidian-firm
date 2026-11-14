@@ -1,3 +1,5 @@
+import { extraConditions } from './conditions-extra';
+
 // Condition / topic landing pages. Each targets a local search such as
 // "back pain treatment Abuja". Keep clinic facts consistent with the FAQ and
 // contact pages; keep medical content general and evidence-based.
@@ -33,7 +35,7 @@ export interface Condition {
 
 const CALL = 'Call 070-6587-3379 to book.';
 
-export const conditions: Condition[] = [
+const baseConditions: Condition[] = [
   {
     slug: 'low-back-pain',
     path: '/conditions/low-back-pain',
@@ -434,5 +436,7 @@ export const conditions: Condition[] = [
     relatedConditions: ['stroke-rehabilitation', 'low-back-pain'],
   },
 ];
+
+export const conditions: Condition[] = [...baseConditions, ...extraConditions];
 
 export const conditionBySlug = Object.fromEntries(conditions.map((c) => [c.slug, c]));

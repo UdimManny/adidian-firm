@@ -45,7 +45,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title="Our Physiotherapists in Abuja | Adidian Physiotherapy Clinic Team"
         description="Meet the licensed physiotherapists at Adidian Physiotherapy Clinic in Area 11, Garki, Abuja, their specialties and experience."

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from 'lucide-react';
+import { areas } from '../data/areas';
 
 const Footer: React.FC = () => {
   const services = [
@@ -17,6 +18,7 @@ const Footer: React.FC = () => {
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Our Services' },
     { path: '/conditions', label: 'Conditions We Treat' },
+    { path: '/physiotherapy-abuja', label: 'Areas We Serve' },
     { path: '/team', label: 'Meet the Team' },
     { path: '/testimonials', label: 'Patient Testimonials' },
     { path: '/faq', label: 'FAQs' },
@@ -173,6 +175,17 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
+          <div className="mt-8 text-center text-sm text-gray-400">
+            <span className="text-gray-300 font-semibold">Physiotherapy across Abuja: </span>
+            <Link to="/physiotherapy-abuja" className="hover:text-blue-400">Garki</Link>
+            {areas.map((a) => (
+              <span key={a.slug}>
+                {' · '}
+                <Link to={a.path} className="hover:text-blue-400">{a.name}</Link>
+              </span>
+            ))}
+          </div>
+
           <div className="mt-6 text-center">
             <p className="text-gray-500 text-sm">
               Leading physiotherapy clinic in Abuja. We stand for ADIDIAN: Accessibility, Diligence, Innovation, Distinguished care, 

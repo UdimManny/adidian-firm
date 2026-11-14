@@ -4,7 +4,7 @@ import { SEO } from '../components/SEO';
 import { conditions } from '../data/conditions';
 
 const Conditions = () => (
-  <div className="pt-20">
+  <div>
     <SEO
       title="Conditions We Treat | Physiotherapy in Abuja | Adidian Physiotherapy"
       description="Physiotherapy in Abuja for back pain, sciatica, neck pain, knee pain, frozen shoulder, stroke recovery and more, at our Garki clinic or at home. Call 070-6587-3379."

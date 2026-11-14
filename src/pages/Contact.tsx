@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title="Contact & Book a Physiotherapist in Abuja | Adidian Physiotherapy"
         description="Book a physiotherapy appointment at No 32 Lord Lugard Street, Area 11, Garki, Abuja. Call 070-6587-3379, email us or get directions. Open Mon\u2013Sat."

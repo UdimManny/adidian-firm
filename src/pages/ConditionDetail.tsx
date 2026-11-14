@@ -5,6 +5,7 @@ import { SEO } from '../components/SEO';
 import NotFound from './NotFound';
 import { conditionBySlug, type Condition } from '../data/conditions';
 import { services } from '../data/services';
+import { areas } from '../data/areas';
 import { BUSINESS_ID, absoluteUrl } from '../seo/site';
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
@@ -48,7 +49,7 @@ export const ConditionPage = ({ condition: c }: { condition: Condition }) => {
   const relatedConditions = c.relatedConditions.map((slug) => conditionBySlug[slug]).filter(Boolean);
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title={c.title}
         description={c.metaDescription}
@@ -237,6 +238,21 @@ export const ConditionPage = ({ condition: c }: { condition: Condition }) => {
           </div>
         </div>
       </section>
+
+      {!isCondition && (
+        <section className="py-12 bg-white">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Home physiotherapy by area</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {areas.map((a) => (
+                <Link key={a.slug} to={a.path} className="px-4 py-2 rounded-full border border-gray-200 text-gray-700 hover:border-blue-600 hover:text-blue-600">
+                  Physiotherapy in {a.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-16 bg-blue-600 text-white text-center">

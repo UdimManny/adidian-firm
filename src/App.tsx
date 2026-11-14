@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, useParams } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -18,12 +18,9 @@ import Conditions from './pages/Conditions';
 import ConditionDetail from './pages/ConditionDetail';
 import HomePhysiotherapy from './pages/HomePhysiotherapy';
 import { Privacy, Terms, PatientConfidentiality } from './pages/Legal';
-
-// Old service URLs lived under /blog/:id. Netlify 301s them too (public/_redirects).
-const LegacyBlogRedirect = () => {
-  const { serviceId } = useParams();
-  return <Navigate to={`/services/${serviceId}`} replace />;
-};
+import ArticlePage from './pages/ArticlePage';
+import Areas from './pages/Areas';
+import AreaPage from './pages/AreaPage';
 
 // Router-agnostic so the same tree is used by the browser (BrowserRouter)
 // and by the build-time prerender (StaticRouter).
@@ -50,7 +47,10 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/patient-confidentiality" element={<PatientConfidentiality />} />
           <Route path="/hipaa" element={<Navigate to="/patient-confidentiality" replace />} />
-          <Route path="/blog/:serviceId" element={<LegacyBlogRedirect />} />
+          {/* Articles; old /blog/<service-id> URLs redirect to /services inside ArticlePage */}
+          <Route path="/blog/:slug" element={<ArticlePage />} />
+          <Route path="/physiotherapy-abuja" element={<Areas />} />
+          <Route path="/physiotherapy-abuja/:slug" element={<AreaPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

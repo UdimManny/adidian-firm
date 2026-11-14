@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { SEO } from '../components/SEO';
 import { conditions } from '../data/conditions';
+import { articles } from '../data/articles';
 
 const Home: React.FC = () => {
   const services = [
@@ -327,6 +328,26 @@ const Home: React.FC = () => {
               >
                 <h3 className="font-bold text-gray-900 mb-1">{c.h1}</h3>
                 <span className="text-blue-600 text-sm font-semibold">Learn more →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* From the blog */}
+      <section className="py-16 md:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-8 gap-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Physiotherapy advice</h2>
+            <Link to="/blog" className="text-blue-600 font-semibold whitespace-nowrap">All articles →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {articles.slice(0, 3).map((a) => (
+              <Link key={a.slug} to={`/blog/${a.slug}`} className="group bg-white rounded-xl shadow overflow-hidden hover:shadow-lg transition-shadow">
+                <img loading="lazy" decoding="async" src={a.image} alt={a.title} className="w-full h-40 object-cover" />
+                <div className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-blue-600">{a.title}</h3>
+                </div>
               </Link>
             ))}
           </div>

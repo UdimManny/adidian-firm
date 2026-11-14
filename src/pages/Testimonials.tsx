@@ -79,7 +79,7 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title="Patient Reviews & Success Stories | Adidian Physiotherapy Abuja"
         description="Read what patients say about their physiotherapy treatment at Adidian Physiotherapy Clinic in Garki, Abuja."

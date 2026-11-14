@@ -85,7 +85,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title="Physiotherapy Services in Abuja | Pain, Sports, Stroke & Women's Health"
         description="Physiotherapy services at our Abuja clinic: pain management, sports rehabilitation, neurological and stroke rehab, women's health, paediatrics, geriatric care and massage."

@@ -71,7 +71,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div>
       <SEO
         title="Physiotherapy FAQs | Adidian Physiotherapy Clinic Abuja"
         description="Answers to common questions about physiotherapy at our Abuja clinic: first visits, session length, insurance/HMO, home visits, opening hours and more."
