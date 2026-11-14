@@ -160,8 +160,8 @@ const FAQ: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900">Send Us an Email</h4>
                     <p className="text-gray-600">Get detailed responses to your physiotherapy questions</p>
-                    <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-blue-600 font-semibold">
-                      info@adidianphysiotherapyclinic.com
+                    <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="text-blue-600 font-semibold">
+                      adidianphysiotherapyclinic@gmail.com
                     </a>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ const FAQ: React.FC = () => {
               <span>Call: 070-6587-3379</span>
             </a>
             <a
-              href="mailto:info@adidianphysiotherapyclinic.com"
+              href="mailto:adidianphysiotherapyclinic@gmail.com"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-200 font-semibold inline-flex items-center justify-center space-x-2"
             >
               <Mail size={20} />

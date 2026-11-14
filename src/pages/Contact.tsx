@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { whatsappLink } from '../seo/site';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +18,27 @@ const Contact: React.FC = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const serviceLabel = (value: string) =>
+    (typeof document !== 'undefined' &&
+      document.querySelector<HTMLOptionElement>(`#service option[value="${value}"]`)?.textContent) ||
+    value;
+
+  // Opens WhatsApp (app on phones, WhatsApp Web on computers) with the form
+  // details filled in, so the patient sends them straight to the clinic.
+  const sendOnWhatsApp = () => {
+    const form = document.querySelector<HTMLFormElement>('form[name="booking"]');
+    if (form && !form.reportValidity()) return;
+    const lines = [
+      'Hello Adidian Physiotherapy Clinic, I would like to book an appointment.',
+      `Name: ${formData.name}`,
+      `Phone: ${formData.phone}`,
+      formData.email && `Email: ${formData.email}`,
+      formData.service && `Service: ${serviceLabel(formData.service)}`,
+      formData.message && `Message: ${formData.message}`,
+    ].filter(Boolean);
+    window.open(whatsappLink(lines.join('\n')), '_blank', 'noopener');
   };
 
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
@@ -103,7 +125,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <a href="mailto:info@adidianphysiotherapyclinic.com" className="text-gray-600 hover:text-blue-600">
+                      <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="text-gray-600 hover:text-blue-600">
                         adidianphysiotherapyclinic@gmail.com
                       </a>
                     </div>
@@ -251,14 +273,24 @@ const Contact: React.FC = () => {
                   <Link to="/privacy" className="text-blue-600 underline">Privacy Policy</Link>.
                 </p>
 
-                <button
-                  type="submit"
-                  disabled={status === 'sending'}
-                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 disabled:opacity-60 transition-colors duration-200 flex items-center justify-center space-x-2 font-semibold"
-                >
-                  <Send size={20} />
-                  <span>{status === 'sending' ? 'Sending…' : 'Send Message'}</span>
-                </button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <button
+                    type="button"
+                    onClick={sendOnWhatsApp}
+                    className="w-full bg-[#25D366] text-white px-6 py-4 rounded-lg hover:bg-[#1ebe5b] transition-colors duration-200 flex items-center justify-center space-x-2 font-semibold"
+                  >
+                    <MessageCircle size={20} />
+                    <span>Send on WhatsApp</span>
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={status === 'sending'}
+                    className="w-full bg-blue-600 text-white px-6 py-4 rounded-lg hover:bg-blue-700 disabled:opacity-60 transition-colors duration-200 flex items-center justify-center space-x-2 font-semibold"
+                  >
+                    <Send size={20} />
+                    <span>{status === 'sending' ? 'Sending…' : 'Send by Email'}</span>
+                  </button>
+                </div>
 
                 {status === 'sent' && (
                   <p role="status" className="p-4 rounded-lg bg-green-50 text-green-800">
@@ -267,7 +299,7 @@ const Contact: React.FC = () => {
                 )}
                 {status === 'error' && (
                   <p role="alert" className="p-4 rounded-lg bg-red-50 text-red-800">
-                    Sorry, your message could not be sent. Please call us on{' '}
+                    Sorry, your message could not be sent by email. Please use <strong>Send on WhatsApp</strong>, call us on{' '}
                     <a href="tel:+2347065873379" className="font-semibold underline">070-6587-3379</a> or email{' '}
                     <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="font-semibold underline">
                       adidianphysiotherapyclinic@gmail.com
@@ -339,7 +371,7 @@ const Contact: React.FC = () => {
                 Send detailed questions or requests via email. We'll respond within 24 hours during business days.
               </p>
               <a
-                href="mailto:info@adidianphysiotherapyclinic.com"
+                href="mailto:adidianphysiotherapyclinic@gmail.com"
                 className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors duration-200 font-semibold"
               >
                 Send Email

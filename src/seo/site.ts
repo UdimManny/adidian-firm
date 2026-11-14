@@ -6,6 +6,8 @@ export const CLINIC = {
   name: 'Adidian Physiotherapy Clinic',
   phone: '+2347065873379',
   phoneDisplay: '070-6587-3379',
+  /** WhatsApp number in international format, digits only (used for wa.me links). */
+  whatsapp: '2347065873379',
   email: 'adidianphysiotherapyclinic@gmail.com',
   streetAddress: 'No 32 Lord Lugard Street, Area 11, Garki',
   locality: 'Abuja',
@@ -21,6 +23,9 @@ export const CLINIC = {
     'https://www.instagram.com/adidian_physiotherapy_clinic',
   ],
 };
+
+export const whatsappLink = (text?: string) =>
+  `https://wa.me/${CLINIC.whatsapp}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
 
 export const BUSINESS_ID = `${SITE_URL}/#clinic`;
 

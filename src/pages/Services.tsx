@@ -271,7 +271,7 @@ const Services: React.FC = () => {
               Call: 070-6587-3379
             </a>
             <a
-              href="mailto:info@adidianphysiotherapyclinic.com"
+              href="mailto:adidianphysiotherapyclinic@gmail.com"
               className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-200 font-semibold"
             >
               Send Email
