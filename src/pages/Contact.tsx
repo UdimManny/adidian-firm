@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 import { SEO } from '../components/SEO';
 
@@ -18,18 +19,27 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  // Submissions go to Netlify Forms (form "booking"). Netlify finds the form in
+  // the prerendered HTML at deploy time; set up email notifications in the
+  // Netlify dashboard under Forms.
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will contact you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      message: ''
-    });
+    setStatus('sending');
+    try {
+      const body = new URLSearchParams(new FormData(e.currentTarget) as unknown as Record<string, string>).toString();
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setStatus('sent');
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -134,7 +144,20 @@ const Contact: React.FC = () => {
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Book Your Physiotherapy Consultation</h2>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                name="booking"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="booking" />
+                <p className="hidden">
+                  <label>
+                    Leave this empty: <input name="bot-field" />
+                  </label>
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -223,13 +246,34 @@ const Contact: React.FC = () => {
                   ></textarea>
                 </div>
 
+                <p className="text-sm text-gray-500">
+                  We use your details only to respond to your enquiry and arrange your care. See our{' '}
+                  <Link to="/privacy" className="text-blue-600 underline">Privacy Policy</Link>.
+                </p>
+
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2 font-semibold"
+                  disabled={status === 'sending'}
+                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 disabled:opacity-60 transition-colors duration-200 flex items-center justify-center space-x-2 font-semibold"
                 >
                   <Send size={20} />
-                  <span>Send Message</span>
+                  <span>{status === 'sending' ? 'Sending…' : 'Send Message'}</span>
                 </button>
+
+                {status === 'sent' && (
+                  <p role="status" className="p-4 rounded-lg bg-green-50 text-green-800">
+                    Thank you! Your message has been sent. We will contact you soon to arrange your appointment.
+                  </p>
+                )}
+                {status === 'error' && (
+                  <p role="alert" className="p-4 rounded-lg bg-red-50 text-red-800">
+                    Sorry, your message could not be sent. Please call us on{' '}
+                    <a href="tel:+2347065873379" className="font-semibold underline">070-6587-3379</a> or email{' '}
+                    <a href="mailto:adidianphysiotherapyclinic@gmail.com" className="font-semibold underline">
+                      adidianphysiotherapyclinic@gmail.com
+                    </a>.
+                  </p>
+                )}
               </form>
 
               <div className="mt-8 p-4 bg-blue-50 rounded-lg">

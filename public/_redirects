@@ -1,2 +1,3 @@
 # Old service URLs → new service pages (permanent)
 /blog/:id  /services/:id  301
+/hipaa  /patient-confidentiality  301
