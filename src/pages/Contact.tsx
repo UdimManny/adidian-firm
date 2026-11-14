@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
-import { whatsappLink } from '../seo/site';
+import { CLINIC, whatsappLink } from '../seo/site';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -43,20 +43,32 @@ const Contact: React.FC = () => {
 
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
-  // Submissions go to Netlify Forms (form "booking"). Netlify finds the form in
-  // the prerendered HTML at deploy time; set up email notifications in the
-  // Netlify dashboard under Forms.
+  // Emails the enquiry straight to the clinic through FormSubmit (formsubmit.co).
+  // The first submission sends a one-time activation email to the clinic inbox;
+  // after that link is clicked, every enquiry is delivered.
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const honeypot = (e.currentTarget.elements.namedItem('_honey') as HTMLInputElement | null)?.value;
+    if (honeypot) return; // bot
     setStatus('sending');
     try {
-      const body = new URLSearchParams(new FormData(e.currentTarget) as unknown as Record<string, string>).toString();
-      const res = await fetch('/', {
+      const res = await fetch(`https://formsubmit.co/ajax/${CLINIC.email}`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body,
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `New appointment request from ${formData.name} (website)`,
+          _template: 'table',
+          _replyto: formData.email,
+          Name: formData.name,
+          Phone: formData.phone,
+          Email: formData.email,
+          Service: formData.service ? serviceLabel(formData.service) : 'Not specified',
+          Message: formData.message || '-',
+          Page: window.location.href,
+        }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String(data.success) !== 'true') throw new Error(data.message || `HTTP ${res.status}`);
       setStatus('sent');
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch {
@@ -168,16 +180,12 @@ const Contact: React.FC = () => {
               
               <form
                 name="booking"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
                 className="space-y-6"
               >
-                <input type="hidden" name="form-name" value="booking" />
-                <p className="hidden">
+                <p className="hidden" aria-hidden="true">
                   <label>
-                    Leave this empty: <input name="bot-field" />
+                    Leave this empty: <input name="_honey" tabIndex={-1} autoComplete="off" />
                   </label>
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
