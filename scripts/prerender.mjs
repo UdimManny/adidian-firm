@@ -38,7 +38,7 @@ ${routes
     (u) => `  <url>
     <loc>${u === '/' ? `${SITE_URL}/` : SITE_URL + u}</loc>
     <lastmod>${today}</lastmod>
-    <priority>${u === '/' ? '1.0' : u.startsWith('/services') || u.startsWith('/conditions') || u.startsWith('/home-physio') ? '0.9' : '0.7'}</priority>
+    <priority>${u === '/' ? '1.0' : u.startsWith('/services') || u.startsWith('/conditions') || u.startsWith('/home-physio') || u.startsWith('/physiotherapy-abuja') ? '0.9' : u.startsWith('/blog/') ? '0.8' : '0.7'}</priority>
   </url>`
   )
   .join('\n')}

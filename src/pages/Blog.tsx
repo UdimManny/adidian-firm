@@ -3,6 +3,7 @@ import { BookOpen, Mic, Video, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { services } from '../data/services';
 import { SEO } from '../components/SEO';
+import { articles } from '../data/articles';
 
 const Blog: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const Blog: React.FC = () => {
         description="Access valuable physiotherapy information, expert advice, and educational content about physical therapy and wellness from Adidian Physiotherapy Clinic in Abuja."
         breadcrumbs={[{ name: 'Resources', path: '/blog' }]}
       />
-      <div className="pt-20">
+      <div>
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-50 to-green-50 py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,6 +23,25 @@ const Blog: React.FC = () => {
                 Access valuable physiotherapy information, expert advice, and educational content from our Abuja clinic to support
                 your wellness journey and physical therapy treatment.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Articles */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Latest articles</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {articles.map((a) => (
+                <Link key={a.slug} to={`/blog/${a.slug}`} className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                  <img loading="lazy" decoding="async" src={a.image} alt={a.title} className="w-full h-48 object-cover" />
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600">{a.title}</h3>
+                    <p className="text-gray-600 mb-3">{a.excerpt}</p>
+                    <span className="text-sm text-gray-500">{a.readMinutes} min read</span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

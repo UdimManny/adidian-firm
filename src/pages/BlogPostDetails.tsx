@@ -4,6 +4,7 @@ import { blogDatas } from '../components/blogData';
 import { SEO } from '../components/SEO';
 import NotFound from './NotFound';
 import { BUSINESS_ID, absoluteUrl } from '../seo/site';
+import { conditions } from '../data/conditions';
 
 const BlogPostDetails = () => {
   const { serviceId = '' } = useParams();
@@ -14,6 +15,7 @@ const BlogPostDetails = () => {
   }
 
   const path = `/services/${post.id}`;
+  const relatedConditions = conditions.filter((c) => c.relatedServices.includes(post.id));
   const title = `${post.title} in Abuja | Adidian Physiotherapy Clinic`;
 
   return (
@@ -88,6 +90,22 @@ const BlogPostDetails = () => {
           </div>
         </div>
       </section>
+
+      {relatedConditions.length > 0 && (
+        <section className="pb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Conditions we treat with {post.title.toLowerCase()}</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {relatedConditions.map((c) => (
+                <Link key={c.slug} to={c.path} className="bg-white rounded-xl shadow p-5 hover:shadow-lg transition-shadow">
+                  <h3 className="font-bold text-gray-900 mb-1">{c.h1}</h3>
+                  <span className="text-blue-600 text-sm font-semibold">Learn more →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Related Services */}
       {/* <section className="py-16 bg-white">

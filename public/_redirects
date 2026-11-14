@@ -1,3 +1,12 @@
-# Old service URLs → new service pages (permanent)
-/blog/:id  /services/:id  301
+# Old service URLs (were /blog/<id>) → service pages (permanent).
+# /blog/<slug> is now used for articles, so list the old ones explicitly.
+/blog/pain-management  /services/pain-management  301
+/blog/sports-rehabilitation  /services/sports-rehabilitation  301
+/blog/womens-health  /services/womens-health  301
+/blog/neurological-rehabilitation  /services/neurological-rehabilitation  301
+/blog/occupational-therapy  /services/occupational-therapy  301
+/blog/pediatrics  /services/pediatrics  301
+/blog/geriatric-care  /services/geriatric-care  301
+/blog/cardiovascular-rehabilitation  /services/cardiovascular-rehabilitation  301
+/blog/relaxation-massage  /services/relaxation-massage  301
 /hipaa  /patient-confidentiality  301

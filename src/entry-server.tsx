@@ -5,6 +5,8 @@ import { StaticRouter } from 'react-router-dom';
 import App from './App';
 import { services } from './data/services';
 import { conditions } from './data/conditions';
+import { articles } from './data/articles';
+import { areas } from './data/areas';
 
 export const routes = [
   '/',
@@ -17,6 +19,9 @@ export const routes = [
   '/testimonials',
   '/faq',
   '/blog',
+  ...articles.map((a) => `/blog/${a.slug}`),
+  '/physiotherapy-abuja',
+  ...areas.map((a) => a.path),
   '/contact',
   '/privacy',
   '/terms',

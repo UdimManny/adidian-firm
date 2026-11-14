@@ -8,7 +8,7 @@ const NotFound = () => (
       description="The page you are looking for does not exist. Browse our physiotherapy services in Abuja or contact the clinic."
       noindex
     />
-    <div className="pt-32 pb-24 text-center px-4">
+    <div className="pt-16 pb-24 text-center px-4">
       <h1 className="text-4xl font-bold text-gray-900 mb-4">Page not found</h1>
       <p className="text-gray-600 mb-8">Sorry, we couldn't find that page.</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
